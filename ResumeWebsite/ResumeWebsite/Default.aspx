@@ -6,11 +6,37 @@
 <head runat="server">
     <title>Blake's Resume</title>
     <style = "Text/CSS">
-        
-    </style>
+        .HeaderNav
+        {
+            font-size: 30px;
+            border-left:solid;
+            border-bottom:double;
+        }
+
+        .HeaderNav a 
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+        .HeaderNav a:hover
+        {
+            background-color: #669ef9;
+            Text-Shadow: 5px 5px 5px #669ef9;
+			Color: Yellow;
+        }
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <table class="HeaderNav">
+            <thead>
+                <tr>
+                    <th> <a href="Default.aspx">Resume |</a></th>
+                    <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
+                </tr>
+            </thead>
+        </table>
     </form>
     <h1>BLAKE HOELLE</h1>
     <h2>352-454-9993/Bhoelle216@gmail.com</h2>
@@ -28,7 +54,7 @@
 					<li>AT&T awards for selling</li>
 					<li>Consistently over achieved sales Quotas</li>
 				</ul>
-            <hr />
+
 			<div id="HLINE3"></div>
 			
 			<h2><strong>EXPERIENCE</strong></h2>
@@ -55,24 +81,25 @@
 					<li>Multiple day customer interactions</li>
 					<li>Given awards for performance</li>
 				</ul>
-			<H3>Cricket Wireless (Store Manager)-------- Dec 2016 - Mar 2017</H3>
-				<UL>
+			<h3>Cricket Wireless (Store Manager)-------- Dec 2016 - Mar 2017</h3>
+				<ul>
 					<li>Oversee Employees</li>
 					<li>Singlehandedly acheived store goals</li>
 					<li>Scheduling</li>
 					<li>Activly practices selling techniques</li>
 					<li>Maintian Plan-o-Gram compliance for monthly audits</li>
 					<li>Responsible over inventory</li>
-				</UL>
-			<DIV ID="HLINE5"></DIV>
-			<H2><STRONG>EDUCTATION</STRONG></H2>
-			<DIV ID="HLINE6"></DIV>
-				<UL>
+				</ul>
+			<div id="HLINE5"></div>
+			<h2><strong>EDUCATION</strong></h2>
+			<div id="HLINE6"></div>
+				<ul>
 					<li>High School DIploma (Advanced Placement)</li>
 					<li>Honors 3.4 GPA</li>
 					<li>Microsoft Certified (2011 Word, PowerPoint, Excel, Access)</li>
 					<li>Strong knoledge in software navigation</li>
 					<li>Databae, application and programming student (Current)</li>
-				</UL>
+				</ul>
+
 </body>
 </html>
