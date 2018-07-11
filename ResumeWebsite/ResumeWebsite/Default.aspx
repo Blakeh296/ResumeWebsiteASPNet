@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Blake's Resume</title>
     <style = "Text/CSS">
+
         .HeaderNav
         {
             font-size: 30px;
@@ -25,6 +26,17 @@
             Text-Shadow: 5px 5px 5px #669ef9;
 			Color: Yellow;
         }
+        .ul
+        {
+
+            border:groove;
+            width:500px;
+            padding-left:10px;
+            padding-top:5px;
+            padding-bottom:12px;
+            margin: 6px 6px 6px 6px;
+        }
+
         </style>
 </head>
 <body>
@@ -60,8 +72,7 @@
 			<h2><strong>EXPERIENCE</strong></h2>
 			
 			<div id="HLINE4"></div>
-			
-			<h3>Verizon Wireless (Sales Consultant) -------- Mar 2014 - Dec 2014</h3>
+			<div class="ul"><h3>Verizon Wireless (Sales Consultant) -------- Mar 2014 - Dec 2014</h3>
 			
 				<ul>
 				<li>Overachieved Quotas</li>
@@ -70,8 +81,9 @@
 					<li>Work with a team</li>
 					<li>Follow up with customers</li>
 					<li>Given awards for performance</li>
-				</ul>
-			<h3>AT&T (Lead Sales Advocate)-------- Dec 2014 - Oct 2016</h3>
+				</ul></div>
+			
+            <div class ="ul"><h3>AT&T (Lead Sales Advocate)-------- Dec 2014 - Oct 2016</h3>
 				<ul>
 					<li>Leader in sales</li>
 					<li>Cash Handling</li>
@@ -80,8 +92,9 @@
 					<li>Team Leader</li>
 					<li>Multiple day customer interactions</li>
 					<li>Given awards for performance</li>
-				</ul>
-			<h3>Cricket Wireless (Store Manager)-------- Dec 2016 - Mar 2017</h3>
+				</ul></div>
+			
+            <div class="ul"><h3>Cricket Wireless (Store Manager)-------- Dec 2016 - Mar 2017</h3>
 				<ul>
 					<li>Oversee Employees</li>
 					<li>Singlehandedly acheived store goals</li>
@@ -89,7 +102,8 @@
 					<li>Activly practices selling techniques</li>
 					<li>Maintian Plan-o-Gram compliance for monthly audits</li>
 					<li>Responsible over inventory</li>
-				</ul>
+				</ul></div>
+			
 			<div id="HLINE5"></div>
 			<h2><strong>EDUCATION</strong></h2>
 			<div id="HLINE6"></div>
