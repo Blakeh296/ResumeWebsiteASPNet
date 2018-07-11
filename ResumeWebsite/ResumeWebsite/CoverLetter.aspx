@@ -10,27 +10,40 @@
         .HeaderNav
         {
             font-size: 30px;
-            border-left:solid;
-            border-bottom:double;
+            width: 100%;
         }
 
         .HeaderNav a 
         {
             text-decoration: none;
             color: black;
+            background-color: #eee;
+            display:block;
         }
 
         .HeaderNav a:hover
         {
-            background-color: #669ef9;
-            Text-Shadow: 5px 5px 5px #669ef9;
-			Color: Yellow;
+            background-color: #4CAF50;
+            Text-Shadow: 5px 5px 5px #808080;
+			Color: white;
+        }
+
+        .HeaderNav a:active
+        {
+            background-color: #4286f4;
+            color:white;
         }
 
         .CoverLetter
         {
             text-align:center;
             border:groove;
+        }
+
+        .CoverLetter:hover
+        {
+            background-color:#4286f4;
+            color:white;
         }
         </style>
 
@@ -41,7 +54,9 @@
         <table class="HeaderNav">
             <thead>
                 <tr>
-                    <th> <a href="Default.aspx">Resume |</a></th>
+                    <th> <a href="Default.aspx">Resume </a></th>
+                </tr>
+                <tr>
                     <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
                 </tr>
             </thead>

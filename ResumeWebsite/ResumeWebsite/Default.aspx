@@ -7,34 +7,53 @@
     <title>Blake's Resume</title>
     <style = "Text/CSS">
 
+        .h1:hover
+        {
+            color: #4286f4;
+            text-decoration:underline;
+        }
+
         .HeaderNav
         {
             font-size: 30px;
-            border-left:solid;
-            border-bottom:double;
+            width: 100%;
         }
 
         .HeaderNav a 
         {
             text-decoration: none;
             color: black;
+            background-color: #eee;
+            display:block;
         }
 
         .HeaderNav a:hover
         {
-            background-color: #669ef9;
-            Text-Shadow: 5px 5px 5px #669ef9;
-			Color: Yellow;
+            background-color: #4CAF50;
+            Text-Shadow: 5px 5px 5px #808080;
+			Color: white;
         }
+
+        .HeaderNav a:active
+        {
+            background-color: #4286f4;
+            color:white;
+        }
+
         .ul
         {
-
             border:groove;
             width:500px;
             padding-left:10px;
             padding-top:5px;
             padding-bottom:12px;
             margin: 6px 6px 6px 6px;
+        }
+
+        .ul:hover
+        {
+            background-color: #4286f4;
+            color:white;
         }
 
         </style>
@@ -44,18 +63,20 @@
         <table class="HeaderNav">
             <thead>
                 <tr>
-                    <th> <a href="Default.aspx">Resume |</a></th>
-                    <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
+                    <th> <a href="Default.aspx">Resume</a></th>
+                </tr>
+                <tr>
+                <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
                 </tr>
             </thead>
         </table>
     </form>
-    <h1>BLAKE HOELLE</h1>
-    <h2>352-454-9993/Bhoelle216@gmail.com</h2>
+    <h1 class ="h1">BLAKE HOELLE</h1>
+    <h2 class="h1">352-454-9993/Bhoelle216@gmail.com</h2>
 			
 			<div id="HLINE"></div>
 			
-			<h2><strong>AWARDS AND ACCOMPLISHMENTS</strong></h2>
+			<h2 class ="h1"><strong>AWARDS AND ACCOMPLISHMENTS</strong></h2>
 			
 			<div id="HLINE2"></div>
 		
@@ -69,7 +90,7 @@
 
 			<div id="HLINE3"></div>
 			
-			<h2><strong>EXPERIENCE</strong></h2>
+			<h2 class="h1"><strong>EXPERIENCE</strong></h2>
 			
 			<div id="HLINE4"></div>
 			<div class="ul"><h3>Verizon Wireless (Sales Consultant) -------- Mar 2014 - Dec 2014</h3>
