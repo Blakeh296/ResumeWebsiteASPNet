@@ -30,7 +30,7 @@ namespace ResumeWebsite
             try
             {
                 sqlconn.Open();
-                SqlCommand sqlVerifyUser = new SqlCommand("UserNameandPassword", sqlconn);
+                SqlCommand sqlVerifyUser = new SqlCommand("dbo.UserNameandPassword", sqlconn);
                 sqlVerifyUser.CommandType = CommandType.StoredProcedure;
                 sqlVerifyUser.Parameters.AddWithValue("@UserName", UserName);
 

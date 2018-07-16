@@ -11,7 +11,7 @@ namespace ResumeWebsite
 {
     public partial class Login : System.Web.UI.Page
     {
-
+        DataConn dataConn = new DataConn();
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -20,24 +20,12 @@ namespace ResumeWebsite
 
             try
             {
-                DataConn
-
                 userName = TextBox1.Text;
                 passWord = TextBox2.Text;
 
-                // Define the connection string
-                string connString = @"Server=PL09/MTCDB;Database=LoginDB;Trusted_Connection=True;";
-                // Define the connection using the connection string
-                SqlConnection sqlConnection = new SqlConnection(connString);
-                // Define a data adapter to pull the data from the server using the connection and a stored procedure
+                Label1.Text = dataConn.VerifyUser(userName, passWord);
 
-                SqlDataAdapter dataAdapter = new SqlDataAdapter("dbo.UserNameandPassword", sqlConnection);
-                // Create a new datatable
-                DataTable dataTable = new DataTable();
-                // Use the data Adapter to fill the datatable
-                dataAdapter.Fill(dataTable);
-
-                
+                dataConn.Dispose();
             }
             catch(Exception ex)
             {
