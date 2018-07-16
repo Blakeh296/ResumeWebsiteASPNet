@@ -143,9 +143,11 @@
     </form>
 
     <h1 class="HeaderNav"><a href="Default.aspx">Resume</a><a href ="CoverLetter.aspx">Cover Letter</a>
-        <a href ="Login.aspx">Admin Login</a>
+        <a href ="Login.aspx">Login</a>
     </h1>
     <h1 class="HeaderNav">&nbsp;</h1>
+
+    <br /><br /><br />
 
     <h1 class ="h1">BLAKE HOELLE</h1>
     <h2 class="h1">Bhoelle216@gmail.com</h2>

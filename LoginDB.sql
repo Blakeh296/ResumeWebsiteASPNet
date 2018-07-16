@@ -40,6 +40,9 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 
 	PRINT 'PROC [UserNameandPassword] CREATED' -- Display Occurance
 
-
+	--EXEC sp_configure 'remote access', 0;
+	--GO
+	--RECONFIGURE ;
+	--GO
 
 	-- exec UserNameandPassword @UserName = 'Admin123', @Password = 'Password123'

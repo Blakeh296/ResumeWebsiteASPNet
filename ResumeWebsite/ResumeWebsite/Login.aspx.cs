@@ -20,12 +20,17 @@ namespace ResumeWebsite
 
             try
             {
-                userName = TextBox1.Text;
-                passWord = TextBox2.Text;
 
-                Label1.Text = dataConn.VerifyUser(userName, passWord);
+                if (Page.IsPostBack)
+                {
+                    userName = TextBox1.Text;
+                    passWord = TextBox2.Text;
 
-                dataConn.Dispose();
+                    Label1.Text = dataConn.VerifyUser(userName, passWord);
+
+                    dataConn.Dispose();
+                }
+                
             }
             catch(Exception ex)
             {

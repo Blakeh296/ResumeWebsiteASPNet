@@ -45,7 +45,7 @@ namespace ResumeWebsite
                 }
                 else
                 {
-                    if (sqlUsers.Rows[0]["UserPassWord"].ToString() == Password)
+                    if (sqlUsers.Rows[0]["PassWord"].ToString() == Password)
                     {
                         returnValue = "Access Granted !";
                     }
