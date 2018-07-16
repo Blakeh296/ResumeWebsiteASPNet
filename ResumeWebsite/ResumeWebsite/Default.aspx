@@ -7,23 +7,31 @@
     <title>Blake's Resume</title>
     <style = "Text/CSS">
 
+        .h1
+        {
+            text-align:center;
+        }
+
         .h1:hover
         {
-            color: #4286f4;
+            color: #4CAF50;
             text-decoration:underline;
         }
 
         .HeaderNav
         {
+            text-align:center;
             font-size: 30px;
             width: 100%;
+            margin-top: 1px;
+            margin-bottom: 0px;
+            height: 37px;
         }
 
         .HeaderNav a 
         {
             text-decoration: none;
             color: black;
-            background-color: #eee;
             display:block;
         }
 
@@ -40,47 +48,114 @@
             color:white;
         }
 
-        .ul
+        .ulvz
         {
+
             border:groove;
             width:500px;
             padding-left:10px;
-            padding-top:5px;
-            padding-bottom:12px;
-            margin: 6px 6px 6px 6px;
+            padding-top:30px;
+            padding-bottom:30px;
+            margin: auto;
         }
 
-        .ul:hover
+        .ulvz:hover
         {
-            background-color: #4286f4;
+            background-color: #ff0000;
             color:white;
+        }
+
+        .ulatt
+        {
+
+            border:groove;
+            width:500px;
+            padding-left:10px;
+            padding-top:30px;
+            padding-bottom:30px;
+            margin: auto;
+        }
+
+        .ulatt:hover
+        {
+            background-color: #6abaff;
+            color:white;
+        }
+
+        .ulct
+        {
+
+            border:groove;
+            width:500px;
+            padding-left:10px;
+            padding-top:30px;
+            padding-bottom:30px;
+            margin: auto;
+        }
+
+        .ulct:hover
+        {
+            background-color: #4CAF50;
+            color:white;
+        }
+
+        .ulCentered
+        {
+            text-align:center;
+        }
+
+        .ulCentered:hover
+        {
+            text-decoration:underline;
+            color: #4CAF50;
+        }
+
+        .HLINE1
+        {
+            HEIGHT: 5PX;
+			WIDTH:	100%;
+			BACKGROUND-COLOR:BLACK;
+
+        }
+
+        .HLINE1:hover
+        {
+            background-color: #4CAF50;
+        }
+
+        .HLINE2
+        {
+            HEIGHT: 2PX;
+			WIDTH:	100%;
+			BACKGROUND-COLOR:BLACK;
+        }
+
+        .HLINE2:hover
+        {
+            background-color: #4CAF50;
         }
 
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <table class="HeaderNav">
-            <thead>
-                <tr>
-                    <th> <a href="Default.aspx">Resume</a></th>
-                </tr>
-                <tr>
-                <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
-                </tr>
-            </thead>
-        </table>
+                           
     </form>
+
+    <h1 class="HeaderNav"><a href="Default.aspx">Resume</a><a href ="CoverLetter.aspx">Cover Letter</a></h1>
+    <h1 class="HeaderNav">&nbsp;</h1>
+
     <h1 class ="h1">BLAKE HOELLE</h1>
-    <h2 class="h1">352-454-9993/Bhoelle216@gmail.com</h2>
-			
-			<div id="HLINE"></div>
+    <h2 class="h1">Bhoelle216@gmail.com</h2>
+	<h2 class="h1">352-454-9993</h2>	
+
+			<div class="HLINE1"></div>
 			
 			<h2 class ="h1"><strong>AWARDS AND ACCOMPLISHMENTS</strong></h2>
 			
-			<div id="HLINE2"></div>
+			<div class="HLINE2"></div>
 		
-				<ul>
+				<ul class ="ulCentered">
 					<li>Certified in HTML and CSS</li>
 					<li>3.4 GPA (High School)</li>
 					<li>Microsoft Certified (Word, Excel, PowerPoint, Access)</li>
@@ -88,12 +163,12 @@
 					<li>Consistently over achieved sales Quotas</li>
 				</ul>
 
-			<div id="HLINE3"></div>
+			<div class="HLINE1"></div>
 			
 			<h2 class="h1"><strong>EXPERIENCE</strong></h2>
 			
-			<div id="HLINE4"></div>
-			<div class="ul"><h3>Verizon Wireless (Sales Consultant) -------- Mar 2014 - Dec 2014</h3>
+			<div class="HLINE2"></div>
+			<div class="ulvz"><h3>Verizon Wireless (Sales Consultant) -------- Mar 2014 - Dec 2014</h3>
 			
 				<ul>
 				<li>Overachieved Quotas</li>
@@ -104,7 +179,7 @@
 					<li>Given awards for performance</li>
 				</ul></div>
 			
-            <div class ="ul"><h3>AT&T (Lead Sales Advocate)-------- Dec 2014 - Oct 2016</h3>
+            <div class ="ulatt"><h3>AT&T (Lead Sales Advocate)-------- Dec 2014 - Oct 2016</h3>
 				<ul>
 					<li>Leader in sales</li>
 					<li>Cash Handling</li>
@@ -115,7 +190,7 @@
 					<li>Given awards for performance</li>
 				</ul></div>
 			
-            <div class="ul"><h3>Cricket Wireless (Store Manager)-------- Dec 2016 - Mar 2017</h3>
+            <div class="ulct"><h3>Cricket Wireless (Store Manager)-------- Dec 2016 - Mar 2017</h3>
 				<ul>
 					<li>Oversee Employees</li>
 					<li>Singlehandedly acheived store goals</li>
@@ -125,10 +200,10 @@
 					<li>Responsible over inventory</li>
 				</ul></div>
 			
-			<div id="HLINE5"></div>
-			<h2><strong>EDUCATION</strong></h2>
-			<div id="HLINE6"></div>
-				<ul>
+			<div class="HLINE1"></div>
+			<h2 class="h1"><strong>EDUCATION</strong></h2>
+			<div class="HLINE2"></div>
+				<ul class="ulCentered">
 					<li>High School DIploma (Advanced Placement)</li>
 					<li>Honors 3.4 GPA</li>
 					<li>Microsoft Certified (2011 Word, PowerPoint, Excel, Access)</li>
@@ -136,5 +211,6 @@
 					<li>Databae, application and programming student (Current)</li>
 				</ul>
 
+    <p><a href="Default.aspx">To Top ^</a></p>
 </body>
 </html>
