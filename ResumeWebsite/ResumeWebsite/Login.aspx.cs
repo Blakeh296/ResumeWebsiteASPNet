@@ -12,14 +12,16 @@ namespace ResumeWebsite
     public partial class Login : System.Web.UI.Page
     {
 
+
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string qry = "select * from ";
-            string userName;
-            string passWord;
+            string userName="";
+            string passWord="";
 
             try
             {
+                DataConn
+
                 userName = TextBox1.Text;
                 passWord = TextBox2.Text;
 
@@ -35,7 +37,7 @@ namespace ResumeWebsite
                 // Use the data Adapter to fill the datatable
                 dataAdapter.Fill(dataTable);
 
-                dataTable.Select("UserName like '%" + userName + "%'");
+                
             }
             catch(Exception ex)
             {

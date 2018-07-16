@@ -82,6 +82,7 @@
     <Content Include="CoverLetter.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataConn.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
