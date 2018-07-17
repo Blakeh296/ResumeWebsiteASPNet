@@ -1,0 +1,9 @@
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\ResumeWebsite.dll.config
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\ResumeWebsite.dll
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\ResumeWebsite.pdb
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Release\ResumeWebsite.csproj.CoreCompileInputs.cache
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Release\ResumeWebsite.csproj.CopyComplete
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Release\ResumeWebsite.dll
+G:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Release\ResumeWebsite.pdb

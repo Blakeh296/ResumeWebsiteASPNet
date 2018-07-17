@@ -33,6 +33,7 @@ namespace ResumeWebsite
                 SqlCommand sqlVerifyUser = new SqlCommand("dbo.UserNameandPassword", sqlconn);
                 sqlVerifyUser.CommandType = CommandType.StoredProcedure;
                 sqlVerifyUser.Parameters.AddWithValue("@UserName", UserName);
+                sqlVerifyUser.Parameters.AddWithValue("@Password", Password);
 
                 DataTable sqlUsers = new DataTable();
                 SqlDataAdapter sqlDA = new SqlDataAdapter(sqlVerifyUser);
@@ -45,7 +46,7 @@ namespace ResumeWebsite
                 }
                 else
                 {
-                    if (sqlUsers.Rows[0]["PassWord"].ToString() == Password)
+                    if (sqlUsers.Rows[0]["Password"].ToString() == Password)
                     {
                         returnValue = "Access Granted !";
                     }
