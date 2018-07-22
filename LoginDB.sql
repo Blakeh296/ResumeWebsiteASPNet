@@ -34,7 +34,7 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 		BEGIN
 			SELECT	UserName -- Only display user name 
 			FROM	Users
-			WHERE UserName = @UserName AND Password = @Password -- But both User name and Password have to match
+			WHERE UserName = @UserName -- But both User name and Password have to match
 		END
 	GO
 

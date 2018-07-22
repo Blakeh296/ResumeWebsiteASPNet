@@ -5,12 +5,20 @@ using System.Web;
 using System.Web.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace ResumeWebsite
 {
     public class DataConn : IDisposable
     {
         private SqlConnection sqlconn;
+
+        public void ApplicationLog(string LogMessage)
+        {
+            StreamWriter logOutput = new StreamWriter(HttpRuntime.AppDomainAppPath + "\\AppLog.txt", true);
+            logOutput.WriteLine(DateTime.Now.ToString() + ":  " + LogMessage);
+            logOutput.Close();
+        }
 
         public DataConn()
         {
@@ -70,4 +78,5 @@ namespace ResumeWebsite
             sqlconn = null;
         }
     }
+    
 }

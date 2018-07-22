@@ -59,6 +59,12 @@
                 <tr>
                     <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
                 </tr>
+                <tr>
+                    <th><a href ="Login.aspx">Login</a></th>
+                </tr>
+                <tr>
+                    <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
+                </tr>
             </thead>
         </table>
     </form>

@@ -78,6 +78,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="ViewStateCalculator.aspx" />
     <Content Include="Web.config" />
     <Content Include="CoverLetter.aspx" />
   </ItemGroup>
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="CoverLetter.aspx.designer.cs">
       <DependentUpon>CoverLetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStateCalculator.aspx.cs">
+      <DependentUpon>ViewStateCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStateCalculator.aspx.designer.cs">
+      <DependentUpon>ViewStateCalculator.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

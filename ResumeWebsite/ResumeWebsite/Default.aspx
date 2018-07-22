@@ -32,6 +32,7 @@
         {
             text-decoration: none;
             color: black;
+            background-color: #eee;
             display:block;
         }
 
@@ -134,19 +135,30 @@
         {
             background-color: #4CAF50;
         }
-
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
                            
     </form>
+    <table class="HeaderNav">
+            <thead>
+                <tr>
+                    <th> <a href="Default.aspx">Resume </a></th>
+                </tr>
+                <tr>
+                    <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
+                </tr>
+                <tr>
+                    <th><a href ="Login.aspx">Login</a></th>
+                </tr>
+                <tr>
+                    <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
+                </tr>
+            </thead>
+        </table>
 
-    <h1 class="HeaderNav"><a href="Default.aspx">Resume</a><a href ="CoverLetter.aspx">Cover Letter</a>
-        <a href ="Login.aspx">Login</a>
-    </h1>
     <h1 class="HeaderNav">&nbsp;</h1>
-
     <br /><br /><br />
 
     <h1 class ="h1">BLAKE HOELLE</h1>
