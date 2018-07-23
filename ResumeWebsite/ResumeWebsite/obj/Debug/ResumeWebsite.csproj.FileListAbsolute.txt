@@ -17,3 +17,12 @@ D:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.cs
 D:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.dll
 D:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.pdb
 D:\C#\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.csprojResolveAssemblyReference.cache
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\ResumeWebsite.dll.config
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\ResumeWebsite.dll
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\ResumeWebsite.pdb
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.csprojResolveAssemblyReference.cache
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.csproj.CoreCompileInputs.cache
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.dll
+C:\Users\MTCStudent\Desktop\AResumeWebsite\ResumeWebsiteASPNet\ResumeWebsite\ResumeWebsite\obj\Debug\ResumeWebsite.pdb

@@ -20,6 +20,14 @@
 
         .HeaderNav a:hover
         {background-color: #4CAF50;Text-Shadow: 5px 5px 5px #808080;Color: white;}
+
+        .LoginDiv
+        {
+            position:relative;
+            left:40%;
+            top:30px;
+        }
+
     </style>
 </head>
 <body style="height: 137px">
@@ -40,12 +48,13 @@
             </thead>
         </table>
     <form id="form1" runat="server">
-        <div>
+        <div class="LoginDiv"> <p>UserName :</p>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        </div>
+            <p>Password :</p>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" Width="80px" style="margin-left: 27px; margin-top: 15px" />
-        <p>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="80px" style="margin-left: 27px; margin-top: 15px" />
+        </div>
+            <p>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </p>
     </form>

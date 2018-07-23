@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using System.Web.Configuration;
 
 namespace ResumeWebsite
 {
@@ -25,22 +26,23 @@ namespace ResumeWebsite
 
                 if (Page.IsPostBack)
                 {
-
-                    string ConnString = "";
-                    ConnString = @"Server=PL10\MTCDB; Database=LoginDB; Trusted_Connection=True;";
-
-                    SqlConnection sqlConn = new SqlConnection(ConnString);
+                    string ConnString = null;
+                    string grabPassword = null;
+                    SqlConnection sqlConn;
+                    ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                    sqlConn = new SqlConnection(ConnString);
                     SqlDataAdapter SqlDA = new SqlDataAdapter("dbo.UserNameandPassword", ConnString);
                     DataTable dtPasswordCheck = new DataTable();
                     SqlDA.Fill(dtPasswordCheck);
-
-                    DataRow[] PasswordDR = dtPasswordCheck.Select(TextBox1.Text);
-
+                    DataRow[] PasswordDR = dtPasswordCheck.Select("UserName = '" + TextBox1.Text + "'");
+                    grabPassword = TextBox2.Text;
                     if (PasswordDR.Any())
                     {
-                        if (PasswordDR[0].ItemArray[1].ToString() == TextBox2.Text)
+                        if (PasswordDR[0].ItemArray[2].ToString() == TextBox2.Text)
                         {
-                            Response.Write("You are In !");
+                            Session["Username"] = PasswordDR[0].ItemArray[1];
+                            Response.Write("Logged in! " + Session["Username"]);
+                            IspersonLoggedin = true;
                         }
                         else
                         {

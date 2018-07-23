@@ -29,20 +29,14 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 	GO
 
 	CREATE PROC UserNameandPassword		--Make a stored procedure that accepts a user name and password communicate back to C#
-	(@UserName VARCHAR(20), @Password VARCHAR(20))
 	AS
 		BEGIN
-			SELECT	UserName -- Only display user name 
+			SELECT	* -- Only display user name 
 			FROM	Users
-			WHERE UserName = @UserName -- But both User name and Password have to match
+			 -- But both User name and Password have to match
 		END
 	GO
 
 	PRINT 'PROC [UserNameandPassword] CREATED' -- Display Occurance
 
-	--EXEC sp_configure 'remote access', 0;
-	--GO
-	--RECONFIGURE ;
-	--GO
-
-	-- exec UserNameandPassword @UserName = 'Admin123', @Password = 'Password123'
+	--exec UserNameandPassword @UserName = 'Admin123', @Password = 'Password123'
