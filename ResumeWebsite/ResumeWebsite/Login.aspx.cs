@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 using System.Web.Configuration;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace ResumeWebsite
 {
@@ -27,7 +29,7 @@ namespace ResumeWebsite
                 if (Page.IsPostBack)
                 {
                     string ConnString = null;
-                    string grabPassword = null;
+                    string hashValue = null;
                     SqlConnection sqlConn;
                     ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
                     sqlConn = new SqlConnection(ConnString);
@@ -35,7 +37,16 @@ namespace ResumeWebsite
                     DataTable dtPasswordCheck = new DataTable();
                     SqlDA.Fill(dtPasswordCheck);
                     DataRow[] PasswordDR = dtPasswordCheck.Select("UserName = '" + TextBox1.Text + "'");
-                    grabPassword = TextBox2.Text;
+
+                    // Step 1, calculate MD5 from input
+                    hashValue = TextBox2.Text;
+                    MD5 EncryptionHash = System.Security.Cryptography.MD5.Create();
+                    byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(hashValue);
+                    byte[] hash = EncryptionHash.ComputeHash(inputBytes);
+
+                    // step 2, convert byte array to hex string
+                    StringBuilder sb = new StringBuilder();
+
                     if (PasswordDR.Any())
                     {
                         if (PasswordDR[0].ItemArray[2].ToString() == TextBox2.Text)
