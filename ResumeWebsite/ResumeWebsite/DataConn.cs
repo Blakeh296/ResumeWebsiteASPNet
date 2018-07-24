@@ -88,9 +88,8 @@ namespace ResumeWebsite
 
                 insertNewUser.Parameters.AddWithValue("@UserName", Username);
                 insertNewUser.Parameters.AddWithValue("@Password", Password);
-
+                sqlconn.Open();
                 insertNewUser.ExecuteNonQuery();
-
                 returnValue = true;
             }
             catch (Exception ex)

@@ -45,6 +45,7 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 		BEGIN
 				INSERT INTO Users
 				VALUES (@UserName, @Password)
+				RETURN
 		END
 
 	--SELECT HashBytes('MD5', 'User123')

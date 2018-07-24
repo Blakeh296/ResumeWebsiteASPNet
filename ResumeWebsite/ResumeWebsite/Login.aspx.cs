@@ -98,16 +98,49 @@ namespace ResumeWebsite
         {
             string userName = TextBox1.Text;
             string password = TextBox2.Text;
+            string ConnString;
+            string hashValue;
 
             try
             {
-                dataConn.InsertNewUser(userName, password);
-                Session["Username"] = userName;
-                Response.Write("Successful Registration for UserName : " + Session["Username"]);
+
+                SqlConnection sqlConn;
+
+                ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                sqlConn = new SqlConnection(ConnString);
+
+                SqlCommand insertNewUser = new SqlCommand("dbo.InsertNewUser", sqlConn);
+                insertNewUser.CommandType = CommandType.StoredProcedure;
+
+                // Step 1, calculate MD5 from input
+                hashValue = TextBox2.Text;
+                MD5 EncryptionHash = System.Security.Cryptography.MD5.Create();
+                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(hashValue);
+                byte[] hash = EncryptionHash.ComputeHash(inputBytes);
+
+                // step 2, convert byte array to hex string
+                StringBuilder sb = new StringBuilder();
+
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    sb.Append(hash[i].ToString("X2"));
+                }
+
+                insertNewUser.Parameters.AddWithValue("@UserName", TextBox1.Text);
+                insertNewUser.Parameters.AddWithValue("@Password", sb.ToString());
+                sqlConn.Open();
+
+                int k =insertNewUser.ExecuteNonQuery();
+                if (k != 0)
+                {
+                    lblMessage.Text = "Record Recored";
+                    lblMessage.ForeColor = System.Drawing.Color.CornflowerBlue;
+                }
+                sqlConn.Close();
             }
             catch (Exception ex)
             {
-                Response.Write(ex.Message);
+                 Response.Write(ex.Message);
             }  
         }
     }
