@@ -15,6 +15,11 @@ namespace ResumeWebsite
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Username"] != null)
+            {
+                Response.Write("Logged in as : " + Session["Username"]);
+            }
+
             if (Page.IsPostBack)
             {
                 if (ViewState["Total"] == null)

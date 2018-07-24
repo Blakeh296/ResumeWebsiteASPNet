@@ -17,6 +17,14 @@ namespace ResumeWebsite
         DataConn dataConn = new DataConn();
         bool IspersonLoggedin = false;
 
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Session["Username"] != null)
+            {
+                Response.Write("Logged in as : " + Session["Username"]);
+            }
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
            // string userName="";
@@ -30,12 +38,16 @@ namespace ResumeWebsite
                 {
                     string ConnString = null;
                     string hashValue = null;
+
                     SqlConnection sqlConn;
+
                     ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
                     sqlConn = new SqlConnection(ConnString);
                     SqlDataAdapter SqlDA = new SqlDataAdapter("dbo.UserNameandPassword", ConnString);
                     DataTable dtPasswordCheck = new DataTable();
                     SqlDA.Fill(dtPasswordCheck);
+
                     DataRow[] PasswordDR = dtPasswordCheck.Select("UserName = '" + TextBox1.Text + "'");
 
                     // Step 1, calculate MD5 from input
@@ -47,19 +59,28 @@ namespace ResumeWebsite
                     // step 2, convert byte array to hex string
                     StringBuilder sb = new StringBuilder();
 
+                    for (int i = 0; i < hash.Length; i++)
+                    {
+                        sb.Append(hash[i].ToString("X2"));
+                    }
+
                     if (PasswordDR.Any())
                     {
-                        if (PasswordDR[0].ItemArray[2].ToString() == TextBox2.Text)
+                        if (PasswordDR[0].ItemArray[2].ToString() == sb.ToString())
                         {
+
+                            // Grab user id using Session State
                             Session["Username"] = PasswordDR[0].ItemArray[1];
+
+                            // Post users UserName to the top
                             Response.Write("Logged in! " + Session["Username"]);
+
                             IspersonLoggedin = true;
                         }
                         else
                         {
                             Response.Write("Password was Inncorect.");
                         }
-
                     }
                     else
                     {

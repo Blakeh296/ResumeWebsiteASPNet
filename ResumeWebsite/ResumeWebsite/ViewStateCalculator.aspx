@@ -144,6 +144,10 @@
             </div>
         </div><br />
         <br />
+        
+        <p class="History">History</p>
+        <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+        <br /><br />
         <table class="HeaderNav">
             <thead>
                 <tr>
@@ -160,8 +164,6 @@
                 </tr>
             </thead>
         </table>
-        <p class="History">History</p>
-        <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
     </form>
 </body>
 </html>

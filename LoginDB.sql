@@ -17,7 +17,7 @@ GO
 CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to store login information
 	(UserID INT IDENTITY NOT NULL,
 	UserName VARCHAR(30) NOT NULL,
-	Password VARCHAR(30) NOT NULL,
+	Password VARCHAR(MAX) NOT NULL,
 	PRIMARY KEY (UserID))		-- Make user ID primary key
 	GO
 
@@ -25,7 +25,7 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 	GO
 
 		INSERT INTO Users (UserName, [Password])
-	VALUES ('Admin123', 'Password123'), ('User1', 'User123');
+	VALUES ('Admin123', '42F749ADE7F9E195BF475F37A44CAFCB'), ('User1', '5A30C9609B52FE348FB6925896E061DE');
 	GO
 
 	CREATE PROC UserNameandPassword		--Make a stored procedure that accepts a user name and password communicate back to C#
@@ -39,4 +39,5 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 
 	PRINT 'PROC [UserNameandPassword] CREATED' -- Display Occurance
 
+	--SELECT HashBytes('MD5', 'User123')
 	--exec UserNameandPassword @UserName = 'Admin123', @Password = 'Password123'
