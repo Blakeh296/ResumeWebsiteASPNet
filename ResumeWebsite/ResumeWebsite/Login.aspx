@@ -53,6 +53,7 @@
             <p>Password :</p>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="80px" style="margin-left: 27px; margin-top: 15px" />
+            <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" style="margin-left: 40px" Text="Register" />
         </div>
             <p>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

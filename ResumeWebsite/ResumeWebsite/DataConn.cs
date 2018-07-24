@@ -72,6 +72,36 @@ namespace ResumeWebsite
             return returnValue;
         }
 
+        public bool InsertNewUser(string Username, string Password)
+        {
+            bool returnValue = false;
+            string ConnString;
+            try
+            {
+                SqlConnection sqlConn;
+
+                ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                sqlConn = new SqlConnection(ConnString);
+
+                SqlCommand insertNewUser = new SqlCommand("dbo.InsertNewUser", sqlConn);
+                insertNewUser.CommandType = CommandType.StoredProcedure;
+
+                insertNewUser.Parameters.AddWithValue("@UserName", Username);
+                insertNewUser.Parameters.AddWithValue("@Password", Password);
+
+                insertNewUser.ExecuteNonQuery();
+
+                returnValue = true;
+            }
+            catch (Exception ex)
+            {
+                returnValue = false;
+                throw ex;
+            }
+
+            return returnValue;
+        }
+
         public void Dispose()
         {
             sqlconn.Close();

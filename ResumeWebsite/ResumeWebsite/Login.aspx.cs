@@ -92,6 +92,23 @@ namespace ResumeWebsite
                 {
                     Response.Write(ex.Message);
                 }
-            } 
+            }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            string userName = TextBox1.Text;
+            string password = TextBox2.Text;
+
+            try
+            {
+                dataConn.InsertNewUser(userName, password);
+                Session["Username"] = userName;
+                Response.Write("Successful Registration for UserName : " + Session["Username"]);
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+            }  
         }
+    }
     }

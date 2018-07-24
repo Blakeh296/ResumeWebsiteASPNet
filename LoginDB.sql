@@ -38,6 +38,14 @@ CREATE TABLE Users		-- Add a table with 2 columns, user name and password. to st
 	GO
 
 	PRINT 'PROC [UserNameandPassword] CREATED' -- Display Occurance
+	GO
+
+	CREATE PROC InsertNewUser (@UserName VARCHAR(40), @Password VARCHAR(MAX))
+	AS
+		BEGIN
+				INSERT INTO Users
+				VALUES (@UserName, @Password)
+		END
 
 	--SELECT HashBytes('MD5', 'User123')
 	--exec UserNameandPassword @UserName = 'Admin123', @Password = 'Password123'
