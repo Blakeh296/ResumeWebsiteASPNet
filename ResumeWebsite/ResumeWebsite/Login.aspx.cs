@@ -10,12 +10,16 @@ using System.Web.Configuration;
 using System.Security.Cryptography;
 using System.Text;
 
+// Using System.Text -- Allows the use of String builders
+// Using System.Security.Cryptography; -- Allows the use of MD5 Encryption
+// Using System.Data.SqlClient -- Allows you to connect to SQL
+
 namespace ResumeWebsite
 {
     public partial class Login : System.Web.UI.Page
     {
         DataConn dataConn = new DataConn();
-        bool IspersonLoggedin = false;
+        Encryption encryption = new Encryption();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -39,43 +43,37 @@ namespace ResumeWebsite
                     string ConnString = null;
                     string hashValue = null;
 
+                    // Declare a SQL Connection
                     SqlConnection sqlConn;
 
+                    // Grab Default Connection string from Web.Config Page
                     ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
                     sqlConn = new SqlConnection(ConnString);
+
                     SqlDataAdapter SqlDA = new SqlDataAdapter("dbo.UserNameandPassword", ConnString);
+
+                    // Create A DataTabla
                     DataTable dtPasswordCheck = new DataTable();
+
+                    // Fill the Data Table with data from Data Adapter
                     SqlDA.Fill(dtPasswordCheck);
 
+                    // Create a DataRow, Add Where statement to Stored Proc through ("UserName = '" + TextBox1.Text + "'")
                     DataRow[] PasswordDR = dtPasswordCheck.Select("UserName = '" + TextBox1.Text + "'");
 
-                    // Step 1, calculate MD5 from input
-                    hashValue = TextBox2.Text;
-                    MD5 EncryptionHash = System.Security.Cryptography.MD5.Create();
-                    byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(hashValue);
-                    byte[] hash = EncryptionHash.ComputeHash(inputBytes);
-
-                    // step 2, convert byte array to hex string
-                    StringBuilder sb = new StringBuilder();
-
-                    for (int i = 0; i < hash.Length; i++)
-                    {
-                        sb.Append(hash[i].ToString("X2"));
-                    }
+                    // Encrypt Textbox 2 
+                    hashValue = encryption.Encrypt(TextBox2.Text);
 
                     if (PasswordDR.Any())
                     {
-                        if (PasswordDR[0].ItemArray[2].ToString() == sb.ToString())
+                        if (PasswordDR[0].ItemArray[2].ToString() == hashValue)
                         {
-
                             // Grab user id using Session State
                             Session["Username"] = PasswordDR[0].ItemArray[1];
 
                             // Post users UserName to the top
                             Response.Write("Logged in! " + Session["Username"]);
-
-                            IspersonLoggedin = true;
                         }
                         else
                         {
@@ -112,22 +110,10 @@ namespace ResumeWebsite
                 SqlCommand insertNewUser = new SqlCommand("dbo.InsertNewUser", sqlConn);
                 insertNewUser.CommandType = CommandType.StoredProcedure;
 
-                // Step 1, calculate MD5 from input
-                hashValue = TextBox2.Text;
-                MD5 EncryptionHash = System.Security.Cryptography.MD5.Create();
-                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(hashValue);
-                byte[] hash = EncryptionHash.ComputeHash(inputBytes);
-
-                // step 2, convert byte array to hex string
-                StringBuilder sb = new StringBuilder();
-
-                for (int i = 0; i < hash.Length; i++)
-                {
-                    sb.Append(hash[i].ToString("X2"));
-                }
+                hashValue =  encryption.Encrypt(TextBox2.Text);
 
                 insertNewUser.Parameters.AddWithValue("@UserName", TextBox1.Text);
-                insertNewUser.Parameters.AddWithValue("@Password", sb.ToString());
+                insertNewUser.Parameters.AddWithValue("@Password", hashValue);
                 sqlConn.Open();
 
                 int k =insertNewUser.ExecuteNonQuery();
