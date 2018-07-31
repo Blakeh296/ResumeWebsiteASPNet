@@ -56,6 +56,10 @@
             <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" style="margin-left: 40px" Text="Register" />
         &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
+            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource2">
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
         </div>
             <p>
                 &nbsp;</p>

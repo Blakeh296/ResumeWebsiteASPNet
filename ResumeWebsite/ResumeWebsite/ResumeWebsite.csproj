@@ -75,6 +75,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomerInfo.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
@@ -83,6 +84,13 @@
     <Content Include="CoverLetter.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerInfo.aspx.cs">
+      <DependentUpon>CustomerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerInfo.aspx.designer.cs">
+      <DependentUpon>CustomerInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataConn.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

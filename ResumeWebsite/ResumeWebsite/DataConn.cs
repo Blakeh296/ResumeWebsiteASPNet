@@ -101,6 +101,39 @@ namespace ResumeWebsite
             return returnValue;
         }
 
+        public bool InsertNewContact (ContactInfo newContact)
+        {
+            SqlCommand SqlCmdInsertContact;
+            bool returnValue = false;
+
+            try
+            {
+                sqlconn.Open();
+                SqlCmdInsertContact = new SqlCommand("AddContact", sqlconn);
+                SqlCmdInsertContact.CommandType = CommandType.StoredProcedure;
+
+                SqlCmdInsertContact.Parameters.AddWithValue("@FirstName", newContact.FirstName);
+                SqlCmdInsertContact.Parameters.AddWithValue("@LastName", newContact.LastName);
+                SqlCmdInsertContact.Parameters.AddWithValue("@MiddleInit", newContact.MiddleName);
+                SqlCmdInsertContact.Parameters.AddWithValue("@CompanyName", newContact.CompanyName);
+                SqlCmdInsertContact.Parameters.AddWithValue("@AddressLine1", newContact.AddressLine1);
+                SqlCmdInsertContact.Parameters.AddWithValue("@AddressLine2", newContact.AddressLine2);
+                SqlCmdInsertContact.Parameters.AddWithValue("@City", newContact.City);
+                SqlCmdInsertContact.Parameters.AddWithValue("@State", newContact.AddressState);
+                SqlCmdInsertContact.Parameters.AddWithValue("@PostalCode", newContact.PostalCode);
+                SqlCmdInsertContact.Parameters.AddWithValue("@Email", newContact.Email);
+
+                SqlCmdInsertContact.ExecuteNonQuery();
+
+                returnValue = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return returnValue;
+        }
+
         public void Dispose()
         {
             sqlconn.Close();
