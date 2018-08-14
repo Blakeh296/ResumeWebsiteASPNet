@@ -20,5 +20,11 @@ namespace ResumeWebsite
                 Response.Redirect("Login.aspx");
             }
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["Username"] = null;
+            Response.Redirect("Login.aspx");
+        }
     }
 }

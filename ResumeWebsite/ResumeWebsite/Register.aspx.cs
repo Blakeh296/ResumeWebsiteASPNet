@@ -30,7 +30,7 @@ namespace ResumeWebsite
 
             try
             {
-
+            
                 SqlConnection sqlConn;
 
                 ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
@@ -48,8 +48,8 @@ namespace ResumeWebsite
                 int k = insertNewUser.ExecuteNonQuery();
                 if (k != 0)
                 {
-                    lblMessage.Text = "Record Recored";
-                    lblMessage.ForeColor = System.Drawing.Color.CornflowerBlue;
+                    Session["Username"] = userName;
+                    Response.Redirect("Default.aspx");
                 }
                 sqlConn.Close();
             }

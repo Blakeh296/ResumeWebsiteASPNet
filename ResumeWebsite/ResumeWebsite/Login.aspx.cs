@@ -76,8 +76,8 @@ namespace ResumeWebsite
                             // Grab user id using Session State
                             Session["Username"] = PasswordDR[0].ItemArray[1];
 
-                            // Post users UserName to the top
-                            Response.Write("Logged in! " + Session["Username"]);
+                            // Redirect logged in user to site content
+                            Response.Redirect("Default.aspx");
                         }
                         else
                         {
@@ -96,42 +96,6 @@ namespace ResumeWebsite
                 }
         }
 
-        protected void btnRegister_Click(object sender, EventArgs e)
-        {
-            string userName = TextBox1.Text;
-            string password = TextBox2.Text;
-            string ConnString;
-            string hashValue;
-
-            try
-            {
-
-                SqlConnection sqlConn;
-
-                ConnString = WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-                sqlConn = new SqlConnection(ConnString);
-
-                SqlCommand insertNewUser = new SqlCommand("dbo.InsertNewUser", sqlConn);
-                insertNewUser.CommandType = CommandType.StoredProcedure;
-
-                hashValue =  encryption.Encrypt(TextBox2.Text);
-
-                insertNewUser.Parameters.AddWithValue("@UserName", TextBox1.Text);
-                insertNewUser.Parameters.AddWithValue("@Password", hashValue);
-                sqlConn.Open();
-
-                int k =insertNewUser.ExecuteNonQuery();
-                if (k != 0)
-                {
-                    lblMessage.Text = "Record Recored";
-                    lblMessage.ForeColor = System.Drawing.Color.CornflowerBlue;
-                }
-                sqlConn.Close();
-            }
-            catch (Exception ex)
-            {
-                 Response.Write(ex.Message);
-            }  
-        }
+       
     }
     }

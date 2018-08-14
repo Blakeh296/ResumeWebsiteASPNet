@@ -64,5 +64,11 @@ namespace ResumeWebsite
                 Response.Write(ex.Message);
             }
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["Username"] = null;
+            Response.Redirect("Login.aspx");
+        }
     }
 }

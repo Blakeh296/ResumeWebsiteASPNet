@@ -51,19 +51,14 @@
             </thead>
         </table>
     <form id="form1" class="LoginDiv" runat="server">
-            <p><a href="Register.aspx">Register Here</a></p>
             <p>UserName :</p>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <p>Password :</p>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="80px" style="margin-left: 27px; margin-top: 15px" />
-            <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" style="margin-left: 40px" Text="Register" />
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;<p><a href="Register.aspx">Register Here</a></p>
+            &nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
-            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource2">
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <p>
                 &nbsp;</p>
     </form>
