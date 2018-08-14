@@ -123,6 +123,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <table class="HeaderNav">
+            <thead>
+                <tr>
+                    <th> <a href="Default.aspx">Resume </a></th>
+                </tr>
+                <tr>
+                    <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
+                </tr>
+                <tr>
+                    <th><a href ="Login.aspx">Login</a></th>
+                </tr>
+                <tr>
+                    <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
+                </tr>
+                <tr>
+                    <th><a href ="CustomerInfo.aspx">Customers Info</a></th>
+                </tr>
+            </thead>
+        </table>
         
         <div>
             <h1 id="h1">Calculator Pro !</h1>
@@ -147,23 +166,6 @@
         
         <p class="History">History</p>
         <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
-        <br /><br />
-        <table class="HeaderNav">
-            <thead>
-                <tr>
-                    <th> <a href="Default.aspx">Resume </a></th>
-                </tr>
-                <tr>
-                    <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
-                </tr>
-                <tr>
-                    <th><a href ="Login.aspx">Login</a></th>
-                </tr>
-                <tr>
-                    <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
-                </tr>
-            </thead>
-        </table>
     </form>
 </body>
 </html>

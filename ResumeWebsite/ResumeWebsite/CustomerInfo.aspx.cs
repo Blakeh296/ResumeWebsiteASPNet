@@ -27,7 +27,14 @@ namespace ResumeWebsite
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Username"] != null)
+            {
+                Response.Write("Logged in as : " + Session["Username"]);
+            }
+            else
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void btnAddContact_Click(object sender, EventArgs e)

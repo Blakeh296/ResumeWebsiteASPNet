@@ -27,6 +27,10 @@ namespace ResumeWebsite
             {
                 Response.Write("Logged in as : " + Session["Username"]);
             }
+            if (Session["Username"]==null)
+            {
+                Response.Write("Login OR Register here to continue");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

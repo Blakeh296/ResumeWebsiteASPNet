@@ -15,6 +15,10 @@ namespace ResumeWebsite
             {
                 Response.Write("Logged in as : " + Session["Username"]);
             }
+            else
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }
