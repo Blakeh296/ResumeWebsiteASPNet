@@ -41,17 +41,37 @@
         </table>
         <div>
             <p>UserName :</p>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="tbUserName" runat="server"></asp:TextBox>
             <p>Password :</p>
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="tbPassword" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Label id="passconf" runat="server">Password Conformation :</asp:Label>
+            <asp:Label id="tbPassConf" runat="server">Password Conformation :</asp:Label>
             <br />
         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-            <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" style="margin-left: 40px" Text="Register" />
+            <asp:Button ID="btnRegister" runat="server" OnClientClick="validateUserInfo()" OnClick="btnRegister_Click" style="margin-left: 40px" Text="Register" />
             <asp:Label ID="lblMessage" runat="server"></asp:Label>
         </div>
     </form>
+    <script>
+        function validateUserInfo() {
+
+            let validated = true;
+            let userName = document.getElementById('<%=tbUserName.ClientID%>');
+            let userPass = document.getElementById('<%=tbPassword.ClientID%>');
+            let passConf = document.getElementById('<%=tbPassConf.ClientID%>');
+
+            if (userName.length && userPass.length < 8) {
+                validated = false;
+                Response.write("must be atleast 8 characters");
+            }
+
+            if (userPass == passConf)
+            {
+
+            }
+            return validated;
+        }
+    </script>
 </body>
 </html>

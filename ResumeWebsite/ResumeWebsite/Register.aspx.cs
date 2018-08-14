@@ -23,8 +23,8 @@ namespace ResumeWebsite
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            string userName = TextBox1.Text;
-            string password = TextBox2.Text;
+            string userName = tbUserName.Text;
+            string password = tbPassword.Text;
             string ConnString;
             string hashValue;
 
@@ -39,9 +39,9 @@ namespace ResumeWebsite
                 SqlCommand insertNewUser = new SqlCommand("dbo.InsertNewUser", sqlConn);
                 insertNewUser.CommandType = CommandType.StoredProcedure;
 
-                hashValue = encryption.Encrypt(TextBox2.Text);
+                hashValue = encryption.Encrypt(tbPassword.Text);
 
-                insertNewUser.Parameters.AddWithValue("@UserName", TextBox1.Text);
+                insertNewUser.Parameters.AddWithValue("@UserName", tbUserName.Text);
                 insertNewUser.Parameters.AddWithValue("@Password", hashValue);
                 sqlConn.Open();
 

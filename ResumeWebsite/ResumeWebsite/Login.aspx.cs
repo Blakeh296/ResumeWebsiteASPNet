@@ -94,7 +94,7 @@ namespace ResumeWebsite
                 {
                     Response.Write(ex.Message);
                 }
-            }
+        }
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
