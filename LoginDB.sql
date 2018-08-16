@@ -86,3 +86,5 @@ CREATE TABLE Contacts
 	--SELECT HashBytes('MD5', 'User123')
 	--exec UserNameandPassword @UserName = 'Admin123', @Password = 'Password123'
 	--select * from Contacts
+
+	--select * from Users

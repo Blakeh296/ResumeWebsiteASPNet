@@ -865,3 +865,246 @@
 8/14/2018 6:25:09 PM:  Application_BeginRequested.
 8/14/2018 6:25:09 PM:  Application_BeginRequested.
 8/14/2018 6:25:12 PM:  Application_BeginRequested.
+8/15/2018 5:25:42 PM:  Application Started.
+8/15/2018 5:25:44 PM:  Application_BeginRequested.
+8/15/2018 5:25:44 PM:  Application_BeginRequested.
+8/15/2018 5:25:45 PM:  Session Started. Session ID: 1995
+8/15/2018 5:25:45 PM:  Application_BeginRequested.
+8/15/2018 5:26:11 PM:  Application_BeginRequested.
+8/15/2018 5:26:59 PM:  Application_BeginRequested.
+8/15/2018 5:26:59 PM:  Application_BeginRequested.
+8/15/2018 5:27:06 PM:  Application_BeginRequested.
+8/15/2018 5:28:40 PM:  SessionEnded.
+8/15/2018 5:31:07 PM:  Application_BeginRequested.
+8/15/2018 5:31:07 PM:  Application_BeginRequested.
+8/15/2018 5:31:07 PM:  Session Started. Session ID: 253
+8/15/2018 5:31:07 PM:  Application_BeginRequested.
+8/15/2018 5:31:10 PM:  Application_BeginRequested.
+8/15/2018 5:31:38 PM:  Application_BeginRequested.
+8/15/2018 5:32:55 PM:  SessionEnded.
+8/15/2018 5:32:55 PM:  Application End.
+8/15/2018 5:33:27 PM:  Application Started.
+8/15/2018 5:33:28 PM:  Application_BeginRequested.
+8/15/2018 5:33:28 PM:  Application_BeginRequested.
+8/15/2018 5:33:29 PM:  Session Started. Session ID: 1533
+8/15/2018 5:33:29 PM:  Application_BeginRequested.
+8/15/2018 5:33:41 PM:  Application_BeginRequested.
+8/15/2018 5:33:49 PM:  Application_BeginRequested.
+8/15/2018 5:35:20 PM:  SessionEnded.
+8/15/2018 5:40:14 PM:  Application End.
+8/15/2018 5:40:22 PM:  Application Started.
+8/15/2018 5:40:22 PM:  Application_BeginRequested.
+8/15/2018 5:40:22 PM:  Application_BeginRequested.
+8/15/2018 5:40:22 PM:  Session Started. Session ID: 772
+8/15/2018 5:40:22 PM:  Application_BeginRequested.
+8/15/2018 5:40:28 PM:  Application_BeginRequested.
+8/15/2018 5:40:34 PM:  Application_BeginRequested.
+8/15/2018 5:42:00 PM:  SessionEnded.
+8/15/2018 5:42:12 PM:  Application_BeginRequested.
+8/15/2018 5:42:12 PM:  Application_BeginRequested.
+8/15/2018 5:42:12 PM:  Session Started. Session ID: 9356
+8/15/2018 5:42:12 PM:  Application_BeginRequested.
+8/15/2018 5:42:15 PM:  Application_BeginRequested.
+8/15/2018 5:42:20 PM:  Application_BeginRequested.
+8/15/2018 5:43:16 PM:  Application_BeginRequested.
+8/15/2018 5:43:16 PM:  Application_BeginRequested.
+8/15/2018 5:43:16 PM:  Application_BeginRequested.
+8/15/2018 5:43:18 PM:  Application_BeginRequested.
+8/15/2018 5:43:24 PM:  Application_BeginRequested.
+8/15/2018 5:43:24 PM:  Application_BeginRequested.
+8/15/2018 5:44:08 PM:  Application_BeginRequested.
+8/15/2018 5:44:08 PM:  Error Recorded.
+8/15/2018 5:45:20 PM:  SessionEnded.
+8/15/2018 5:57:51 PM:  Application_BeginRequested.
+8/15/2018 5:57:55 PM:  Session Started. Session ID: 3981
+8/15/2018 5:57:55 PM:  Application_BeginRequested.
+8/15/2018 5:58:09 PM:  Application_BeginRequested.
+8/15/2018 5:58:09 PM:  Application_BeginRequested.
+8/15/2018 5:58:11 PM:  Application_BeginRequested.
+8/15/2018 5:58:47 PM:  Application_BeginRequested.
+8/15/2018 5:58:53 PM:  Application_BeginRequested.
+8/15/2018 6:00:00 PM:  SessionEnded.
+8/15/2018 6:14:38 PM:  Application End.
+8/15/2018 6:14:45 PM:  Application Started.
+8/15/2018 6:14:45 PM:  Application_BeginRequested.
+8/15/2018 6:14:46 PM:  Session Started. Session ID: 7753
+8/15/2018 6:14:51 PM:  Application_BeginRequested.
+8/15/2018 6:16:00 PM:  SessionEnded.
+8/15/2018 6:18:16 PM:  Application End.
+8/15/2018 6:19:25 PM:  Application Started.
+8/15/2018 6:19:27 PM:  Application_BeginRequested.
+8/15/2018 6:19:28 PM:  Session Started. Session ID: 2562
+8/15/2018 6:19:30 PM:  Application_BeginRequested.
+8/15/2018 6:21:00 PM:  SessionEnded.
+8/15/2018 6:27:27 PM:  Application_BeginRequested.
+8/15/2018 6:27:33 PM:  Session Started. Session ID: 760
+8/15/2018 6:27:38 PM:  Application_BeginRequested.
+8/15/2018 6:28:40 PM:  SessionEnded.
+8/15/2018 6:29:06 PM:  Application_BeginRequested.
+8/15/2018 6:29:12 PM:  Session Started. Session ID: 9454
+8/15/2018 6:29:20 PM:  Application_BeginRequested.
+8/15/2018 6:30:40 PM:  SessionEnded.
+8/15/2018 6:33:18 PM:  Application End.
+8/15/2018 6:33:25 PM:  Application Started.
+8/15/2018 6:33:25 PM:  Application_BeginRequested.
+8/15/2018 6:33:26 PM:  Session Started. Session ID: 3548
+8/15/2018 6:33:26 PM:  Application_BeginRequested.
+8/15/2018 6:33:32 PM:  Application_BeginRequested.
+8/15/2018 6:33:32 PM:  Application_BeginRequested.
+8/15/2018 6:33:39 PM:  Application_BeginRequested.
+8/15/2018 6:33:42 PM:  Application_BeginRequested.
+8/15/2018 6:33:43 PM:  Application_BeginRequested.
+8/15/2018 6:33:45 PM:  Application_BeginRequested.
+8/15/2018 6:35:00 PM:  SessionEnded.
+8/15/2018 6:37:21 PM:  Application End.
+8/15/2018 6:37:24 PM:  Application Started.
+8/15/2018 6:37:24 PM:  Application_BeginRequested.
+8/15/2018 6:37:25 PM:  Session Started. Session ID: 9052
+8/15/2018 6:37:37 PM:  Application_BeginRequested.
+8/15/2018 6:37:37 PM:  Application_BeginRequested.
+8/15/2018 6:37:39 PM:  Application_BeginRequested.
+8/15/2018 6:38:40 PM:  SessionEnded.
+8/15/2018 6:44:46 PM:  Application End.
+8/15/2018 6:44:50 PM:  Application Started.
+8/15/2018 6:44:50 PM:  Application_BeginRequested.
+8/15/2018 6:44:51 PM:  Error Recorded.
+8/15/2018 7:05:04 PM:  Application End.
+8/15/2018 7:38:59 PM:  Application Started.
+8/15/2018 7:39:00 PM:  Application_BeginRequested.
+8/15/2018 7:39:04 PM:  Session Started. Session ID: 5951
+8/15/2018 7:39:56 PM:  Application_BeginRequested.
+8/15/2018 7:41:20 PM:  SessionEnded.
+8/15/2018 7:41:53 PM:  Application End.
+8/15/2018 7:41:59 PM:  Application Started.
+8/15/2018 7:41:59 PM:  Application_BeginRequested.
+8/15/2018 7:42:00 PM:  Session Started. Session ID: 2867
+8/15/2018 7:43:20 PM:  SessionEnded.
+8/15/2018 7:44:47 PM:  Application End.
+8/15/2018 7:44:52 PM:  Application Started.
+8/15/2018 7:44:52 PM:  Application_BeginRequested.
+8/15/2018 7:44:53 PM:  Session Started. Session ID: 6451
+8/15/2018 7:45:16 PM:  Application_BeginRequested.
+8/15/2018 7:45:27 PM:  Application_BeginRequested.
+8/15/2018 7:45:27 PM:  Application_BeginRequested.
+8/15/2018 7:45:30 PM:  Application_BeginRequested.
+8/15/2018 7:45:37 PM:  Application_BeginRequested.
+8/15/2018 7:45:38 PM:  Application_BeginRequested.
+8/15/2018 7:45:39 PM:  Application_BeginRequested.
+8/15/2018 7:45:41 PM:  Application_BeginRequested.
+8/15/2018 7:45:41 PM:  Application_BeginRequested.
+8/15/2018 7:47:00 PM:  SessionEnded.
+8/15/2018 7:50:29 PM:  Application End.
+8/15/2018 7:50:34 PM:  Application Started.
+8/15/2018 7:50:34 PM:  Application_BeginRequested.
+8/15/2018 7:50:35 PM:  Session Started. Session ID: 2629
+8/15/2018 7:51:40 PM:  SessionEnded.
+8/15/2018 7:57:40 PM:  Application End.
+8/15/2018 7:57:45 PM:  Application Started.
+8/15/2018 7:57:45 PM:  Application_BeginRequested.
+8/15/2018 7:57:46 PM:  Session Started. Session ID: 1829
+8/15/2018 7:59:00 PM:  SessionEnded.
+8/15/2018 8:02:45 PM:  Application End.
+8/15/2018 8:02:50 PM:  Application Started.
+8/15/2018 8:02:50 PM:  Application_BeginRequested.
+8/15/2018 8:02:51 PM:  Session Started. Session ID: 5317
+8/15/2018 8:04:00 PM:  SessionEnded.
+8/15/2018 8:06:08 PM:  Application End.
+8/15/2018 8:06:13 PM:  Application Started.
+8/15/2018 8:06:13 PM:  Application_BeginRequested.
+8/15/2018 8:06:14 PM:  Session Started. Session ID: 9286
+8/15/2018 8:07:20 PM:  SessionEnded.
+8/15/2018 8:17:19 PM:  Application End.
+8/15/2018 8:17:24 PM:  Application Started.
+8/15/2018 8:17:24 PM:  Application_BeginRequested.
+8/15/2018 8:17:25 PM:  Session Started. Session ID: 9191
+8/15/2018 8:18:40 PM:  SessionEnded.
+8/15/2018 8:18:42 PM:  Application End.
+8/15/2018 8:18:47 PM:  Application Started.
+8/15/2018 8:18:47 PM:  Application_BeginRequested.
+8/15/2018 8:18:48 PM:  Session Started. Session ID: 2600
+8/15/2018 8:20:00 PM:  SessionEnded.
+8/15/2018 8:20:03 PM:  Application_BeginRequested.
+8/15/2018 8:20:07 PM:  Session Started. Session ID: 6688
+8/15/2018 8:21:20 PM:  SessionEnded.
+8/15/2018 8:23:08 PM:  Application End.
+8/15/2018 8:23:13 PM:  Application Started.
+8/15/2018 8:23:13 PM:  Application_BeginRequested.
+8/15/2018 8:23:14 PM:  Session Started. Session ID: 9625
+8/15/2018 8:24:21 PM:  SessionEnded.
+8/15/2018 8:24:36 PM:  Application End.
+8/15/2018 8:24:41 PM:  Application Started.
+8/15/2018 8:24:41 PM:  Application_BeginRequested.
+8/15/2018 8:24:42 PM:  Session Started. Session ID: 5571
+8/15/2018 8:25:43 PM:  Application_BeginRequested.
+8/15/2018 8:25:48 PM:  Session Started. Session ID: 2159
+8/15/2018 8:25:48 PM:  SessionEnded.
+8/15/2018 8:27:00 PM:  SessionEnded.
+8/15/2018 8:27:06 PM:  Application_BeginRequested.
+8/15/2018 8:27:10 PM:  Session Started. Session ID: 3192
+8/15/2018 8:27:22 PM:  Application_BeginRequested.
+8/15/2018 8:27:23 PM:  Application_BeginRequested.
+8/15/2018 8:27:23 PM:  Application_BeginRequested.
+8/15/2018 8:27:23 PM:  Application_BeginRequested.
+8/15/2018 8:27:32 PM:  Application_BeginRequested.
+8/15/2018 8:28:26 PM:  Application_BeginRequested.
+8/15/2018 8:29:40 PM:  SessionEnded.
+8/15/2018 8:29:42 PM:  Application_BeginRequested.
+8/15/2018 8:29:46 PM:  Session Started. Session ID: 9747
+8/15/2018 8:30:46 PM:  Application_BeginRequested.
+8/15/2018 8:30:51 PM:  SessionEnded.
+8/15/2018 8:30:51 PM:  Session Started. Session ID: 6957
+8/15/2018 8:32:00 PM:  SessionEnded.
+8/15/2018 8:36:31 PM:  Application End.
+8/15/2018 8:36:36 PM:  Application Started.
+8/15/2018 8:36:37 PM:  Application_BeginRequested.
+8/15/2018 8:36:37 PM:  Session Started. Session ID: 1834
+8/15/2018 8:36:54 PM:  Application_BeginRequested.
+8/15/2018 8:36:54 PM:  Application_BeginRequested.
+8/15/2018 8:36:56 PM:  Application_BeginRequested.
+8/15/2018 8:38:00 PM:  SessionEnded.
+8/15/2018 8:38:53 PM:  Application End.
+8/15/2018 8:38:58 PM:  Application Started.
+8/15/2018 8:38:58 PM:  Application_BeginRequested.
+8/15/2018 8:38:59 PM:  Session Started. Session ID: 3986
+8/15/2018 8:39:14 PM:  Application_BeginRequested.
+8/15/2018 8:39:14 PM:  Application_BeginRequested.
+8/15/2018 8:39:15 PM:  Application_BeginRequested.
+8/15/2018 8:40:20 PM:  SessionEnded.
+8/15/2018 8:42:14 PM:  Application End.
+8/15/2018 8:42:19 PM:  Application Started.
+8/15/2018 8:42:19 PM:  Application_BeginRequested.
+8/15/2018 8:42:20 PM:  Session Started. Session ID: 5993
+8/15/2018 8:42:20 PM:  Application_BeginRequested.
+8/15/2018 8:42:32 PM:  Application_BeginRequested.
+8/15/2018 8:42:32 PM:  Application_BeginRequested.
+8/15/2018 8:42:40 PM:  Application_BeginRequested.
+8/15/2018 8:43:48 PM:  SessionEnded.
+8/15/2018 8:43:48 PM:  Application End.
+8/15/2018 8:43:53 PM:  Application Started.
+8/15/2018 8:43:53 PM:  Application_BeginRequested.
+8/15/2018 8:43:54 PM:  Session Started. Session ID: 788
+8/15/2018 8:44:00 PM:  Application_BeginRequested.
+8/15/2018 8:44:00 PM:  Application_BeginRequested.
+8/15/2018 8:45:19 PM:  SessionEnded.
+8/15/2018 8:45:19 PM:  Application End.
+8/15/2018 8:45:24 PM:  Application Started.
+8/15/2018 8:45:24 PM:  Application_BeginRequested.
+8/15/2018 8:45:25 PM:  Session Started. Session ID: 1670
+8/15/2018 8:45:30 PM:  Application_BeginRequested.
+8/15/2018 8:45:30 PM:  Application_BeginRequested.
+8/15/2018 8:46:40 PM:  SessionEnded.
+8/15/2018 9:02:33 PM:  Application_BeginRequested.
+8/15/2018 9:02:33 PM:  Session Started. Session ID: 1425
+8/15/2018 9:02:40 PM:  Application_BeginRequested.
+8/15/2018 9:02:40 PM:  Application_BeginRequested.
+8/15/2018 9:02:42 PM:  Application_BeginRequested.
+8/15/2018 9:02:53 PM:  Application_BeginRequested.
+8/15/2018 9:02:55 PM:  Application_BeginRequested.
+8/15/2018 9:02:56 PM:  Application_BeginRequested.
+8/15/2018 9:02:57 PM:  Application_BeginRequested.
+8/15/2018 9:02:58 PM:  Application_BeginRequested.
+8/15/2018 9:03:00 PM:  Application_BeginRequested.
+8/15/2018 9:03:03 PM:  Application_BeginRequested.
+8/15/2018 9:03:06 PM:  Application_BeginRequested.
+8/15/2018 9:03:12 PM:  Application_BeginRequested.
+8/15/2018 9:04:20 PM:  SessionEnded.

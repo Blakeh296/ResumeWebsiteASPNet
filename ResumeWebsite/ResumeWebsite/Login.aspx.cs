@@ -26,14 +26,47 @@ namespace ResumeWebsite
             if (Session["Username"] != null)
             {
                 Response.Write("Logged in as : " + Session["Username"]);
+                Label1.Visible = false;
+                Label2.Visible = false;
+                TextBox1.Visible = false;
+                TextBox2.Visible = false;
+                LoginBtn.Visible = false;
+                RegisterLink.Visible = false;
+                lblMessage.Visible = false;
+                Header.Visible = true;
+                lblResume.Visible = true;
+                lblCoverLetter.Visible = true;
+                lblCustomerInfo.Visible = true;
+                lblLogin.Visible = false;
+                lblQuery.Visible = true;
+                lblViewStateCal.Visible = true;
+                WelcomeIMG.Visible = false;
+                GreenCheck.Visible = true;
+                lblMessage.Text = "Logged in! As : " + Session["UserName"];
             }
             if (Session["Username"]==null)
             {
                 Response.Write("Login OR Register here to continue");
+                Label1.Visible = true;
+                Label2.Visible = true;
+                TextBox1.Visible = true;
+                TextBox2.Visible = true;
+                LoginBtn.Visible = true;
+                RegisterLink.Visible = true;
+                lblMessage.Visible = true;
+                Header.Visible = false;
+                lblResume.Visible = false;
+                lblCoverLetter.Visible = false;
+                lblCustomerInfo.Visible = false;
+                lblLogin.Visible = false;
+                lblQuery.Visible = false;
+                lblViewStateCal.Visible = false;
+                WelcomeIMG.Visible = true;
+                GreenCheck.Visible = false;
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnLogin(object sender, EventArgs e)
         {
            // string userName="";
           //  string passWord="";
@@ -77,7 +110,7 @@ namespace ResumeWebsite
                             Session["Username"] = PasswordDR[0].ItemArray[1];
 
                             // Redirect logged in user to site content
-                            Response.Redirect("Default.aspx");
+                            Response.Redirect("Login.aspx");
                         }
                         else
                         {

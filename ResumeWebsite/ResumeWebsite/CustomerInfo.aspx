@@ -56,22 +56,26 @@
         <table class="HeaderNav">
             <thead>
                 <tr>
+                    <th><a href ="Login.aspx">Login</a></th>
+                </tr>
+                <tr>
                     <th> <a href="Default.aspx">Resume </a></th>
                 </tr>
                 <tr>
                     <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
                 </tr>
-                <tr>
-                    <th><a href ="Login.aspx">Login</a></th>
-                </tr>
+                
                 <tr>
                     <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
                 </tr>
                 <tr>
                     <th><a href ="CustomerInfo.aspx">Customers Info</a></th>
                 </tr>
+                <tr>
+                    <th><a href ="QuerySQL.aspx">Query AdventureWorks2012</a></th>
+                </tr>
             </thead>
-       
+       </table>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [Contacts]" DeleteCommand="DELETE FROM [Contacts] WHERE [ContactID] = @ContactID" InsertCommand="INSERT INTO [Contacts] ([FirstName], [LastName], [CompanyName], [MiddleInit], [AddressLine1], [AddressLine2], [City], [State], [PostalCode], [Email]) VALUES (@FirstName, @LastName, @CompanyName, @MiddleInit, @AddressLine1, @AddressLine2, @City, @State, @PostalCode, @Email)" UpdateCommand="UPDATE [Contacts] SET [FirstName] = @FirstName, [LastName] = @LastName, [CompanyName] = @CompanyName, [MiddleInit] = @MiddleInit, [AddressLine1] = @AddressLine1, [AddressLine2] = @AddressLine2, [City] = @City, [State] = @State, [PostalCode] = @PostalCode, [Email] = @Email WHERE [ContactID] = @ContactID">
                 <DeleteParameters>
                     <asp:Parameter Name="ContactID" Type="Int32" />

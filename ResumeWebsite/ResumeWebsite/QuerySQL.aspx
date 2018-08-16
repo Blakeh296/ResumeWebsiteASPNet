@@ -1,16 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CoverLetter.aspx.cs" Inherits="ResumeWebsite.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QuerySQL.aspx.cs" Inherits="ResumeWebsite.QuerySQL" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Blake Cover Letter</title>
-
-    <style = "Text/CSS">
+    <title>QuerySQL</title>
+    <style type="text/css">
         .HeaderNav
         {
+            text-align:center;
             font-size: 30px;
             width: 100%;
+            margin-top: 1px;
+            margin-bottom: 0px;
+            height: 37px;
         }
 
         .HeaderNav a 
@@ -27,32 +30,13 @@
             Text-Shadow: 5px 5px 5px #808080;
 			Color: white;
         }
-
-        .HeaderNav a:active
-        {
-            background-color: #4286f4;
-            color:white;
-        }
-
-        .CoverLetter
-        {
-            text-align:center;
-            border:groove;
-        }
-
-        .CoverLetter:hover
-        {
-            background-color:#4286f4;
-            color:white;
-        }
-        </style>
-
+    </style>
 </head>
 <body>
-
     <form id="form1" runat="server">
-        <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
-        <br />
+
+        <asp:Button ID="btnLogOut" runat="server" OnClick="btnLogOut_Click" Text="LogOut" />
+
         <table class="HeaderNav">
             <thead>
                 <tr>
@@ -76,18 +60,14 @@
                 </tr>
             </thead>
         </table>
+
+            <asp:TextBox ID="TextBox1" runat="server" Height="71px" Width="416px"></asp:TextBox>
+            <br /><br />
+            <asp:Button ID="btnQuery" runat="server" OnClick="btnQuery_Click" Text="Search SQLServer" Width="423px" />
+            <br /><br />
+            <asp:GridView ID="GridView1" runat="server">
+            </asp:GridView>
+        
     </form>
-
-    <p>Dear R + L Global Logistics :</p>
-
-    <div class ="CoverLetter">
-
-        <p>I hope to be concidered for the SQL Developer position, as advertised on the Indeed job search site.  
-        I am a long time fan of your companies work! <br /> I was overjoyed when I discovered R + L offers employment in my area.
-        Just like you I put people first, everytime, always.</p>
-
-    </div>
-    
-
 </body>
 </html>

@@ -15,7 +15,7 @@
     <RootNamespace>ResumeWebsite</RootNamespace>
     <AssemblyName>ResumeWebsite</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -78,7 +78,10 @@
     <Content Include="CustomerInfo.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\greencheck.jpg" />
+    <Content Include="Images\welcome-featured-image.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="QuerySQL.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="ViewStateCalculator.aspx" />
     <Content Include="Web.config" />
@@ -119,6 +122,13 @@
     <Compile Include="CoverLetter.aspx.designer.cs">
       <DependentUpon>CoverLetter.aspx</DependentUpon>
     </Compile>
+    <Compile Include="QuerySQL.aspx.cs">
+      <DependentUpon>QuerySQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuerySQL.aspx.designer.cs">
+      <DependentUpon>QuerySQL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,7 +163,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49544</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49544/</IISUrl>
+          <IISUrl>http://localhost/ResumeWebsite</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
