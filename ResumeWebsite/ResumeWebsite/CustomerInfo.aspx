@@ -30,13 +30,14 @@
         .City
         {
             position:relative;
-            top:50px;
+            top:80px;
+            left:220px;
         }
         .State
         {
             position:relative;
-            top:35px;
-            left:150px;
+            top:20px;
+            left:220px;
         }
         .HeaderNav
         {text-align:center;font-size: 30px;width: 100%;
@@ -132,7 +133,7 @@
                 <asp:TextBox ID="tbLname" runat="server"></asp:TextBox> </div>
              <div class ="CompanyName">
                 <asp:Label ID="Label4" runat="server" Text="CompanyName : "></asp:Label>
-                <asp:TextBox ID="tbCompanyName" runat="server"></asp:TextBox></div>
+                <asp:TextBox ID="tbCompanyName" runat="server" Width="232px"></asp:TextBox></div>
             <div class ="AddressLine1">
                 <asp:Label ID="Label5" runat="server" Text="Address Line 1 : "></asp:Label>
                 <asp:TextBox ID="tbAddressLine1" runat="server" Width="238px"></asp:TextBox></div>
@@ -143,14 +144,14 @@
                 <asp:Label ID="Label7" runat="server" Text="City"></asp:Label>
                 <asp:TextBox ID="tbCity" runat="server"></asp:TextBox></div>
             <div class="State">
-                <asp:Label ID="Label8" runat="server" Text="State : "></asp:Label>
+                &nbsp;<asp:Label ID="Label8" runat="server" Text="State : "></asp:Label>
                 <asp:TextBox ID="tbState" runat="server"></asp:TextBox></div>
             <div class ="PostalCode">
                 <asp:Label ID="Label9" runat="server" Text="Postal Code : "></asp:Label>
                 <asp:TextBox ID="tbPostalCode" runat="server" Width="74px"></asp:TextBox></div>
             <div class ="Email">
                 <asp:Label ID="Label10" runat="server" Text="Email : "></asp:Label>
-                <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox></div>
+                <asp:TextBox ID="tbEmail" runat="server" Width="139px"></asp:TextBox></div>
                 <asp:Button ID="btnAddContact" runat="server" OnClick="btnAddContact_Click" Text="Add Contact" />
             </asp:Panel>
     </form>

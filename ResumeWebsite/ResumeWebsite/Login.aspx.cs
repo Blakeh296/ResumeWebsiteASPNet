@@ -31,7 +31,7 @@ namespace ResumeWebsite
                 TextBox1.Visible = false;
                 TextBox2.Visible = false;
                 LoginBtn.Visible = false;
-                RegisterLink.Visible = false;
+                ImageButton1.Visible = false;
                 lblMessage.Visible = false;
                 Header.Visible = true;
                 lblResume.Visible = true;
@@ -52,7 +52,7 @@ namespace ResumeWebsite
                 TextBox1.Visible = true;
                 TextBox2.Visible = true;
                 LoginBtn.Visible = true;
-                RegisterLink.Visible = true;
+                ImageButton1.Visible = true;
                 lblMessage.Visible = true;
                 Header.Visible = false;
                 lblResume.Visible = false;
@@ -129,6 +129,9 @@ namespace ResumeWebsite
                 }
         }
 
-       
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Register.aspx");
+        }
     }
     }

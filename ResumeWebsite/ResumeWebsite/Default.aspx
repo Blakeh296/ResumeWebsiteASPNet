@@ -140,7 +140,7 @@
 <body>
     <form id="form1" runat="server">
                            
-        <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" OnClick="ImageButton1_Click" Width="139px" />
                            
     </form>
     <table class="HeaderNav">

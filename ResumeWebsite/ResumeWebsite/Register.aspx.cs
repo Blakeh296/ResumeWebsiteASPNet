@@ -49,7 +49,7 @@ namespace ResumeWebsite
                 if (k != 0)
                 {
                     Session["Username"] = userName;
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("Login.aspx");
                 }
                 sqlConn.Close();
             }

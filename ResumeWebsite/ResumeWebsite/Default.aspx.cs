@@ -26,5 +26,11 @@ namespace ResumeWebsite
             Session["Username"] = null;
             Response.Redirect("Login.aspx");
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["Username"] = null;
+            Response.Redirect("Login.aspx");
+        }
     }
 }

@@ -27,10 +27,6 @@
             left:40%;
             top:30px;
         }
-
-        .auto-style1 {
-        }
-
     </style>
 </head>
 <body style="height: 137px">
@@ -70,16 +66,19 @@
         <p>
             <asp:Image runat="server" ID="GreenCheck" class="auto-style1" src="Images/greencheck.jpg" Height="203px" Width="223px" /><asp:Image runat="server" id="WelcomeIMG" src="Images/welcome-featured-image.jpg" style="top: -5px; margin-left: 0px;" Height="312px" Width="943px" BorderColor="Black" />
         </p>
-    <p>
-        &nbsp;</p>
+
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="77px" ImageUrl="~/Images/register.gif" OnClick="ImageButton1_Click" Width="277px" style="margin-left: 338px" />
         &nbsp;
-        <br /><br />
-        &nbsp;<asp:Label ID="RegisterLink" runat="server" Text="Label"><a href="Register.aspx">Register Here</a></asp:Label>
             &nbsp;&nbsp;&nbsp;
-            <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
             <p>
                 &nbsp;</p>
     </form>
+    
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
     
 </body>
 </html>
