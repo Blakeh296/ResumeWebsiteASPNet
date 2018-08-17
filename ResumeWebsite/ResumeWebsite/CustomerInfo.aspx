@@ -30,14 +30,30 @@
         .City
         {
             position:relative;
-            top:80px;
+            top:78px;
             left:220px;
         }
         .State
         {
             position:relative;
-            top:20px;
+            top:25px;
             left:220px;
+        }
+        .Email
+        {
+            position:relative;
+            top:10px;
+        }
+        .PostalCode
+        {
+            position:relative;
+            top:5px;
+        }
+        #btnAddContact
+        {
+            position:relative;
+            top:15px;
+            margin-bottom:10px;
         }
         .HeaderNav
         {text-align:center;font-size: 30px;width: 100%;
@@ -52,7 +68,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" OnClick="ImageButton1_Click" Width="139px" />
     
         <table class="HeaderNav">
             <thead>
@@ -68,9 +84,6 @@
                 
                 <tr>
                     <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
-                </tr>
-                <tr>
-                    <th><a href ="CustomerInfo.aspx">Customers Info</a></th>
                 </tr>
                 <tr>
                     <th><a href ="QuerySQL.aspx">Query AdventureWorks2012</a></th>
@@ -123,12 +136,14 @@
                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                 </Columns>
             </asp:GridView>
+        <asp:ImageButton ID="ImageButton2" runat="server" Height="20px" ImageUrl="~/Images/Down-Arrow-PNG-Transparent-Image.png" OnClick="ImageButton2_Click" Width="20px" />
+            <asp:ImageButton ID="ImageButton3" runat="server" Height="20px" ImageUrl="~/Images/arrow-up-b.png" OnClick="ImageButton3_Click" Width="20px" />
             <asp:Panel ID="Panel1" runat="server">
              <div class="NameTxtboxes">
                 <asp:Label ID="Label1" runat="server" Text="First Name : "></asp:Label>
                 <asp:TextBox ID="tbFname" runat="server" Height="17px"></asp:TextBox> 
                 <asp:Label ID="Label2" runat="server" Text="Middle Name : "></asp:Label>
-                <asp:TextBox ID="tbMiddleInit" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tbMiddleInit" runat="server"></asp:TextBox><br />
                 <asp:Label ID="Label3" runat="server" Text="Last Name : "></asp:Label>
                 <asp:TextBox ID="tbLname" runat="server"></asp:TextBox> </div>
              <div class ="CompanyName">

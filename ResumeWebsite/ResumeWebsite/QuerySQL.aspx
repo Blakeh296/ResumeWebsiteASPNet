@@ -30,12 +30,23 @@
             Text-Shadow: 5px 5px 5px #808080;
 			Color: white;
         }
+        #tbInput
+        {
+            margin-top:10px;
+            position:relative;
+            left:260px;
+        }
+        #btnQuery
+        {
+            position:relative;
+            left:260px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
 
-        <asp:Button ID="btnLogOut" runat="server" OnClick="btnLogOut_Click" Text="LogOut" />
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" OnClick="ImageButton1_Click" Width="139px" />
 
         <table class="HeaderNav">
             <thead>
@@ -61,9 +72,9 @@
             </thead>
         </table>
 
-            <asp:TextBox ID="TextBox1" runat="server" Height="71px" Width="416px"></asp:TextBox>
+            <asp:TextBox ID="tbInput" runat="server" Height="71px" Width="416px"></asp:TextBox>
             <br /><br />
-            <asp:Button ID="btnQuery" runat="server" OnClick="btnQuery_Click" Text="Search SQLServer" Width="423px" />
+            <asp:Button ID="btnQuery" runat="server" OnClick="btnQuery_Click" Text="Search SQLServer" Width="417px" />
             <br /><br />
             <asp:GridView ID="GridView1" runat="server">
             </asp:GridView>

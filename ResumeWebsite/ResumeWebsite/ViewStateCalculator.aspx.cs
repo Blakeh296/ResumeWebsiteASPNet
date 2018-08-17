@@ -80,7 +80,7 @@ namespace ResumeWebsite
 
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
+        protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)
         {
             Session["Username"] = null;
             Response.Redirect("Login.aspx");

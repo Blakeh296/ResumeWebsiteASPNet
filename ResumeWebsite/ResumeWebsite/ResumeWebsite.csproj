@@ -78,6 +78,8 @@
     <Content Include="CustomerInfo.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\arrow-up-b.png" />
+    <Content Include="Images\Down-Arrow-PNG-Transparent-Image.png" />
     <Content Include="Images\greencheck.jpg" />
     <Content Include="Images\logout-hi.png" />
     <Content Include="Images\register.gif" />

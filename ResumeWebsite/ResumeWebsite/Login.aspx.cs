@@ -34,14 +34,14 @@ namespace ResumeWebsite
                 ImageButton1.Visible = false;
                 lblMessage.Visible = false;
                 Header.Visible = true;
-                lblResume.Visible = true;
                 lblCoverLetter.Visible = true;
                 lblCustomerInfo.Visible = true;
-                lblLogin.Visible = false;
+                lblResume.Visible = true;
                 lblQuery.Visible = true;
                 lblViewStateCal.Visible = true;
                 WelcomeIMG.Visible = false;
                 GreenCheck.Visible = true;
+                ImageButton2.Visible = true;
                 lblMessage.Text = "Logged in! As : " + Session["UserName"];
             }
             if (Session["Username"]==null)
@@ -55,14 +55,14 @@ namespace ResumeWebsite
                 ImageButton1.Visible = true;
                 lblMessage.Visible = true;
                 Header.Visible = false;
-                lblResume.Visible = false;
                 lblCoverLetter.Visible = false;
                 lblCustomerInfo.Visible = false;
-                lblLogin.Visible = false;
+                lblResume.Visible = false;
                 lblQuery.Visible = false;
                 lblViewStateCal.Visible = false;
                 WelcomeIMG.Visible = true;
                 GreenCheck.Visible = false;
+                ImageButton2.Visible = false;
             }
         }
 
@@ -132,6 +132,12 @@ namespace ResumeWebsite
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("Register.aspx");
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["Username"] = null;
+            Response.Redirect("Login.aspx");
         }
     }
     }

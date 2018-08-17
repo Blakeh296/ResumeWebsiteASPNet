@@ -48,7 +48,7 @@
         #Panel1
         {
             position:relative;
-            left:36.5%;
+            left:30%;
             background-color:black;
             border-left-color:red;
             border-right-color:red;
@@ -66,7 +66,7 @@
         #h1
         {
             position:relative;
-            left:43%;
+            left:38%;
         }
         #cbMath
         {
@@ -110,7 +110,7 @@
             height:80px;
             width:200px;
             position: relative;
-            left:42.5%;
+            left:39%;
             text-align:center;
         }
         .History
@@ -123,7 +123,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" OnClick="ImageButton1_Click1" Width="139px" />
         <br />
         <table class="HeaderNav">
             <thead>

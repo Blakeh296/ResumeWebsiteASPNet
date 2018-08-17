@@ -21,11 +21,6 @@ namespace ResumeWebsite
             }
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
-        {
-            Session["Username"] = null;
-            Response.Redirect("Login.aspx");
-        }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {

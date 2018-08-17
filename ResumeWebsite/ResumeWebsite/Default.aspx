@@ -142,7 +142,7 @@
                            
         <asp:ImageButton ID="ImageButton1" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" OnClick="ImageButton1_Click" Width="139px" />
                            
-    </form>
+    
     <table class="HeaderNav">
             <thead>
                 <tr>
@@ -237,5 +237,6 @@
 				</ul>
 
     <p><a href="Default.aspx">To Top ^</a></p>
+</form>
 </body>
 </html>

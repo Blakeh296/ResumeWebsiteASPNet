@@ -28,7 +28,7 @@ namespace ResumeWebsite
             try
             {
                 GridView1.DataSourceID = String.Empty;
-                string query = TextBox1.Text;
+                string query = tbInput.Text;
                 // Grab the Connection string from the web.Config file
                 string connString = ConfigurationManager.ConnectionStrings["QueryAdventureWorks2012"].ConnectionString;
                 SqlConnection conn = new SqlConnection(connString);
@@ -48,7 +48,7 @@ namespace ResumeWebsite
             }
         }
 
-        protected void btnLogOut_Click(object sender, EventArgs e)
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
             Session["Username"] = null;
             Response.Redirect("Login.aspx");
