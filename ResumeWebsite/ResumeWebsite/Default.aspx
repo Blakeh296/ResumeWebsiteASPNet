@@ -149,9 +149,6 @@
                     <th><a href ="Login.aspx">Login</a></th>
                 </tr>
                 <tr>
-                    <th> <a href="Default.aspx">Resume </a></th>
-                </tr>
-                <tr>
                     <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
                 </tr>
                 

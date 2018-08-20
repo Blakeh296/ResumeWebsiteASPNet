@@ -66,9 +66,6 @@
                 <tr>
                     <th><a href ="CustomerInfo.aspx">Customers Info</a></th>
                 </tr>
-                <tr>
-                    <th><a href ="QuerySQL.aspx">Query AdventureWorks2012</a></th>
-                </tr>
             </thead>
         </table>
 

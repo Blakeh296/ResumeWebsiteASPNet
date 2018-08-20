@@ -136,10 +136,6 @@
                 <tr>
                     <th> <a href ="CoverLetter.aspx"> Cover Letter</a></th>
                 </tr>
-                
-                <tr>
-                    <th><a href ="ViewStateCalculator.aspx">ViewStateCalculator</a></th>
-                </tr>
                 <tr>
                     <th><a href ="CustomerInfo.aspx">Customers Info</a></th>
                 </tr>
