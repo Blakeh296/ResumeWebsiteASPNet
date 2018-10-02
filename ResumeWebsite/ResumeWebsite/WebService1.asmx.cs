@@ -54,10 +54,10 @@ namespace ResumeWebsite
         }
 
         [WebMethod]
-        public string OctalCalculator(int DecimalInput)
+        public string OctalCalculator(long DecimalInput)
         {
-            int input = DecimalInput;
-            int remainder = 0;
+            long input = DecimalInput;
+            long remainder = 0;
             string result = string.Empty;
             try
             {
