@@ -1724,3 +1724,45 @@
 10/1/2018 9:37:30 PM:  Application_BeginRequested.
 10/1/2018 9:37:49 PM:  Application_BeginRequested.
 10/1/2018 9:38:03 PM:  Application_BeginRequested.
+10/2/2018 5:35:43 PM:  Application Started.
+10/2/2018 5:35:43 PM:  Application_BeginRequested.
+10/2/2018 5:35:48 PM:  Application_BeginRequested.
+10/2/2018 5:35:52 PM:  Application_BeginRequested.
+10/2/2018 5:36:44 PM:  Application Started.
+10/2/2018 5:36:45 PM:  Application_BeginRequested.
+10/2/2018 5:36:47 PM:  Application_BeginRequested.
+10/2/2018 5:36:51 PM:  Application_BeginRequested.
+10/2/2018 5:38:09 PM:  Application Started.
+10/2/2018 5:38:09 PM:  Application_BeginRequested.
+10/2/2018 5:38:11 PM:  Application_BeginRequested.
+10/2/2018 5:38:16 PM:  Application_BeginRequested.
+10/2/2018 5:39:17 PM:  Application_BeginRequested.
+10/2/2018 5:55:36 PM:  Application Started.
+10/2/2018 5:55:36 PM:  Application_BeginRequested.
+10/2/2018 5:55:41 PM:  Application_BeginRequested.
+10/2/2018 5:55:45 PM:  Application_BeginRequested.
+10/2/2018 5:58:34 PM:  Application Started.
+10/2/2018 5:58:35 PM:  Application_BeginRequested.
+10/2/2018 5:58:38 PM:  Application_BeginRequested.
+10/2/2018 5:58:47 PM:  Application_BeginRequested.
+10/2/2018 6:01:45 PM:  Application Started.
+10/2/2018 6:01:45 PM:  Application_BeginRequested.
+10/2/2018 6:01:48 PM:  Application_BeginRequested.
+10/2/2018 6:01:52 PM:  Application_BeginRequested.
+10/2/2018 6:16:50 PM:  Application Started.
+10/2/2018 6:16:50 PM:  Application_BeginRequested.
+10/2/2018 6:16:54 PM:  Application_BeginRequested.
+10/2/2018 6:16:59 PM:  Application_BeginRequested.
+10/2/2018 6:19:34 PM:  Application_BeginRequested.
+10/2/2018 6:19:58 PM:  Application Started.
+10/2/2018 6:19:59 PM:  Application_BeginRequested.
+10/2/2018 6:20:01 PM:  Application_BeginRequested.
+10/2/2018 6:20:12 PM:  Application_BeginRequested.
+10/2/2018 6:27:41 PM:  Application Started.
+10/2/2018 6:27:41 PM:  Application_BeginRequested.
+10/2/2018 6:27:43 PM:  Application_BeginRequested.
+10/2/2018 6:27:49 PM:  Application_BeginRequested.
+10/2/2018 6:31:51 PM:  Application Started.
+10/2/2018 6:31:52 PM:  Application_BeginRequested.
+10/2/2018 6:31:54 PM:  Application_BeginRequested.
+10/2/2018 6:31:57 PM:  Application_BeginRequested.

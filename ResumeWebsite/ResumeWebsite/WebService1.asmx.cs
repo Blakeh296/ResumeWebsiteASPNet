@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using System.IO;
 
 namespace ResumeWebsite
 {
@@ -24,33 +25,6 @@ namespace ResumeWebsite
             //reverse the aray and return it
             Array.Reverse(chararray);
             return new string(chararray);
-        }
-
-        [WebMethod] //Must declare webmethod to make method visible to the caller
-        public long BinaryCalculator(long DecimalInput)
-        {
-            try
-            {
-                long input = DecimalInput;
-                string binaryString = string.Empty;
-
-                while (input >= 1)
-                {
-                    if (input % 2 == 1) //If ODD NUMBER
-                        binaryString = binaryString + "1"; //Add a 1 to the end of the string
-                    else if (input % 2 == 0) //if EVEN NUMBER
-                        binaryString = binaryString + "0"; //Add a 0 to the end of the string
-                    //divide the value by 2
-                    input = input / 2;
-                }
-                //Use our private method to reverse the string
-                return long.Parse(ReverseString(binaryString));
-            }
-            catch (Exception ex)
-            {
-                //We can use message boxes so we use this
-                throw new System.ArgumentException(ex.Message);
-            }
         }
 
         [WebMethod]
@@ -79,6 +53,78 @@ namespace ResumeWebsite
         public string HexCalculator(int DecimalInput)
         {
             return DecimalInput.ToString("X");
+        }
+
+        [WebMethod]
+        public string BinaryTester(int DecimalInput)
+        {
+            StreamWriter writer = new StreamWriter("BinaryText.txt");
+            try
+            {
+                long input = DecimalInput;
+                long count = 0;
+                long arryCount = 0;
+                long div;
+                string[] binaryString = new string[DecimalInput];
+                Random rand = new Random();
+
+                while (count <= DecimalInput)
+                {
+                    div = rand.Next(2, 100000);
+                    while (div >= 1)
+                    {
+                        if (div % 2 == 1) //If ODD NUMBER
+                            binaryString[arryCount] = binaryString[arryCount] + "1"; //Add a 1 to the end of the string
+                        else if (div % 2 == 0) //if EVEN NUMBER
+                        {
+                            binaryString[arryCount] = binaryString[arryCount] + "0"; //Add a 0 to the end of the string
+                        }
+                        
+                        div = div / 2;    //divide the value by 2 
+                    }
+
+                    ReverseString(binaryString[arryCount]);
+                    count++;
+                    arryCount++;
+                }
+
+                foreach(string String in binaryString)
+                {
+                    writer.WriteLine(binaryString);
+                }
+                return binaryString[count];
+            }
+            catch (Exception ex)
+            {
+                throw new System.ArgumentException(ex.Message);
+            }
+        }
+
+        [WebMethod] //Must declare webmethod to make method visible to the caller
+        public long BinaryCalculator(long DecimalInput)
+        {
+            try
+            {
+                long input = DecimalInput;
+                string binaryString = string.Empty;
+
+                while (input >= 1)
+                {
+                    if (input % 2 == 1) //If ODD NUMBER
+                        binaryString = binaryString + "1"; //Add a 1 to the end of the string
+                    else if (input % 2 == 0) //if EVEN NUMBER
+                        binaryString = binaryString + "0"; //Add a 0 to the end of the string
+                    //divide the value by 2
+                    input = input / 2;
+                }
+                //Use our private method to reverse the string
+                return long.Parse(ReverseString(binaryString));
+            }
+            catch (Exception ex)
+            {
+                //We can use message boxes so we use this
+                throw new System.ArgumentException(ex.Message);
+            }
         }
     }
 }
