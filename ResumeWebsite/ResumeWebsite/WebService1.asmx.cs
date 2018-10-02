@@ -27,11 +27,11 @@ namespace ResumeWebsite
         }
 
         [WebMethod] //Must declare webmethod to make method visible to the caller
-        public int BinaryCalculator(int DecimalInput)
+        public long BinaryCalculator(long DecimalInput)
         {
             try
             {
-                int input = DecimalInput;
+                long input = DecimalInput;
                 string binaryString = string.Empty;
 
                 while (input >= 1)
@@ -44,7 +44,7 @@ namespace ResumeWebsite
                     input = input / 2;
                 }
                 //Use our private method to reverse the string
-                return int.Parse(ReverseString(binaryString));
+                return long.Parse(ReverseString(binaryString));
             }
             catch (Exception ex)
             {
@@ -73,6 +73,12 @@ namespace ResumeWebsite
             {
                 throw new System.ArgumentException(ex.Message);
             }
+        }
+
+        [WebMethod]
+        public string HexCalculator(int DecimalInput)
+        {
+            return DecimalInput.ToString("X");
         }
     }
 }

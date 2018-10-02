@@ -1681,3 +1681,46 @@
 10/1/2018 8:31:10 PM:  Application_BeginRequested.
 10/1/2018 8:31:23 PM:  Application_BeginRequested.
 10/1/2018 8:31:26 PM:  Application_BeginRequested.
+10/1/2018 8:39:41 PM:  Application Started.
+10/1/2018 8:39:43 PM:  Application_BeginRequested.
+10/1/2018 8:39:47 PM:  Application_BeginRequested.
+10/1/2018 8:39:50 PM:  Application_BeginRequested.
+10/1/2018 8:39:55 PM:  Application_BeginRequested.
+10/1/2018 8:40:45 PM:  Application Started.
+10/1/2018 8:40:47 PM:  Application_BeginRequested.
+10/1/2018 8:40:48 PM:  Application_BeginRequested.
+10/1/2018 8:40:52 PM:  Application_BeginRequested.
+10/1/2018 9:27:39 PM:  Application Started.
+10/1/2018 9:27:40 PM:  Application_BeginRequested.
+10/1/2018 9:27:44 PM:  Application_BeginRequested.
+10/1/2018 9:27:48 PM:  Application_BeginRequested.
+10/1/2018 9:28:19 PM:  Application Started.
+10/1/2018 9:28:19 PM:  Application_BeginRequested.
+10/1/2018 9:28:20 PM:  Application_BeginRequested.
+10/1/2018 9:28:25 PM:  Application_BeginRequested.
+10/1/2018 9:28:39 PM:  Application_BeginRequested.
+10/1/2018 9:29:02 PM:  Application Started.
+10/1/2018 9:29:02 PM:  Application_BeginRequested.
+10/1/2018 9:29:03 PM:  Application_BeginRequested.
+10/1/2018 9:29:10 PM:  Application_BeginRequested.
+10/1/2018 9:29:17 PM:  Application_BeginRequested.
+10/1/2018 9:29:30 PM:  Application_BeginRequested.
+10/1/2018 9:31:51 PM:  Application Started.
+10/1/2018 9:31:53 PM:  Application_BeginRequested.
+10/1/2018 9:31:55 PM:  Application_BeginRequested.
+10/1/2018 9:32:01 PM:  Application_BeginRequested.
+10/1/2018 9:34:05 PM:  Application Started.
+10/1/2018 9:34:07 PM:  Application_BeginRequested.
+10/1/2018 9:34:09 PM:  Application_BeginRequested.
+10/1/2018 9:34:12 PM:  Application_BeginRequested.
+10/1/2018 9:34:20 PM:  Application_BeginRequested.
+10/1/2018 9:34:30 PM:  Application_BeginRequested.
+10/1/2018 9:36:20 PM:  Application_BeginRequested.
+10/1/2018 9:36:21 PM:  Application_BeginRequested.
+10/1/2018 9:36:23 PM:  Application_BeginRequested.
+10/1/2018 9:36:38 PM:  Application_BeginRequested.
+10/1/2018 9:36:51 PM:  Application_BeginRequested.
+10/1/2018 9:37:29 PM:  Application_BeginRequested.
+10/1/2018 9:37:30 PM:  Application_BeginRequested.
+10/1/2018 9:37:49 PM:  Application_BeginRequested.
+10/1/2018 9:38:03 PM:  Application_BeginRequested.
