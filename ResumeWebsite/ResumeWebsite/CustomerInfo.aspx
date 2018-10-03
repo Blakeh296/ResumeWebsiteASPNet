@@ -88,6 +88,9 @@
                 <tr>
                     <th><a href ="QuerySQL.aspx">Query AdventureWorks2012</a></th>
                 </tr>
+                 <tr>
+                    <th> <asp:Label ID="lblWebServiceDemo" runat="server" Text="Label"><a href="WebServiceDemo.aspx">Web Service Demo</a></asp:Label></th>
+                </tr>
             </thead>
        </table>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [Contacts]" DeleteCommand="DELETE FROM [Contacts] WHERE [ContactID] = @ContactID" InsertCommand="INSERT INTO [Contacts] ([FirstName], [LastName], [CompanyName], [MiddleInit], [AddressLine1], [AddressLine2], [City], [State], [PostalCode], [Email]) VALUES (@FirstName, @LastName, @CompanyName, @MiddleInit, @AddressLine1, @AddressLine2, @City, @State, @PostalCode, @Email)" UpdateCommand="UPDATE [Contacts] SET [FirstName] = @FirstName, [LastName] = @LastName, [CompanyName] = @CompanyName, [MiddleInit] = @MiddleInit, [AddressLine1] = @AddressLine1, [AddressLine2] = @AddressLine2, [City] = @City, [State] = @State, [PostalCode] = @PostalCode, [Email] = @Email WHERE [ContactID] = @ContactID">

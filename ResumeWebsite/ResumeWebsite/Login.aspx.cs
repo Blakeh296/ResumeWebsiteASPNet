@@ -60,6 +60,7 @@ namespace ResumeWebsite
                 lblResume.Visible = false;
                 lblQuery.Visible = false;
                 lblViewStateCal.Visible = false;
+                lblWebServiceDemo.Visible = false;
                 WelcomeIMG.Visible = true;
                 GreenCheck.Visible = false;
                 ImageButton2.Visible = false;

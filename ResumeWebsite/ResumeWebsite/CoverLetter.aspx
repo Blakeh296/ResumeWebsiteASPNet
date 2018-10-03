@@ -70,6 +70,9 @@
                 <tr>
                     <th><a href ="QuerySQL.aspx">Query AdventureWorks2012</a></th>
                 </tr>
+                 <tr>
+                    <th><a href="WebServiceDemo.aspx">Web Service Demo</a></th>
+                </tr>
             </thead>
         </table>
     </form>

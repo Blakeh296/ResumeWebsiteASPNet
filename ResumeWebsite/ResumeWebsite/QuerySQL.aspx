@@ -66,6 +66,9 @@
                 <tr>
                     <th><a href ="CustomerInfo.aspx">Customers Info</a></th>
                 </tr>
+                <tr>
+                    <th><a href="WebServiceDemo.aspx">Web Service Demo</a></th>
+                </tr>
             </thead>
         </table>
 

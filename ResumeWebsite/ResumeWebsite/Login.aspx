@@ -22,18 +22,19 @@
         #GreenCheck
         {
             position:relative;
-            left:340px;
+            left:40%;
+            right:40%;
         }
         #ImageButton2
         {
-            position:relative;
-            top:35px;
-            left:150px;
+
         }
     </style>
 </head>
 <body>
     <form id="form1" class="LoginDiv" runat="server">
+        
+        <asp:ImageButton ID="ImageButton2" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" Width="139px" OnClick="ImageButton2_Click" />
         
     <table id="Header" class="HeaderNav">
             <thead>
@@ -54,6 +55,9 @@
                 <tr>
                     <th><asp:Label ID="lblQuery" runat="server" Text="Label"><a href ="QuerySQL.aspx">Query AdventureWorks2012</a></asp:Label></th>
                 </tr>
+                <tr>
+                    <th> <asp:Label ID="lblWebServiceDemo" runat="server" Text="Label"><a href="WebServiceDemo.aspx">Web Service Demo</a></asp:Label></th>
+                </tr>
             </thead>
         </table>
     
@@ -67,7 +71,6 @@
         <asp:Button ID="LoginBtn" runat="server" OnClick="btnLogin" Text="Login" Width="80px" style="margin-left: 27px; margin-top: 15px" />
         </div>
             <asp:Image runat="server" ID="GreenCheck" class="auto-style1" src="Images/greencheck.jpg" Height="203px" Width="223px" />
-        <asp:ImageButton ID="ImageButton2" runat="server" Height="33px" ImageUrl="~/Images/logout-hi.png" Width="139px" OnClick="ImageButton2_Click" />
         
         <asp:Image runat="server" id="WelcomeIMG" src="Images/welcome-featured-image.jpg" style="top: -5px; margin-left: 0px;" Height="312px" Width="943px" BorderColor="Black" />
 

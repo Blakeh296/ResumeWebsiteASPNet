@@ -14,13 +14,22 @@ namespace ResumeWebsite
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Username"] != null)
+            {
+                Response.Write("Logged in as : " + Session["Username"]);
+            }
+            else
+            {
+                Response.Redirect("Login.aspx");
+            }
+
             long count = 1;
             string returnValue = " ";
 
 
-            while (1000 >= count)
+            while (100000 >= count)
             {
-                returnValue = count + " / " + WS1.BinaryCalculator(count).ToString();
+                returnValue = count + " In Binary: " + WS1.BinaryCalculator(count).ToString();
                 returnValue = returnValue + " Hex: " + WS1.HexCalculator(count).ToString();
                 returnValue = returnValue + " Octal: " + WS1.OctalCalculator(count).ToString();
                 BulletedList1.Items.Add(returnValue);
@@ -45,6 +54,12 @@ namespace ResumeWebsite
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+                Session["Username"] = null;
+                Response.Redirect("Login.aspx");
         }
     }
 }
