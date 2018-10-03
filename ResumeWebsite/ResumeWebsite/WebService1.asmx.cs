@@ -10,7 +10,7 @@ namespace ResumeWebsite
     /// <summary>
     /// Summary description for WebService1
     /// </summary>
-    [WebService(Namespace = "http://tempuri.org/")]
+    [WebService(Namespace = "http://localhost:49544/WebServiceDemo.aspx")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
@@ -50,7 +50,7 @@ namespace ResumeWebsite
         }
 
         [WebMethod]
-        public string HexCalculator(int DecimalInput)
+        public string HexCalculator(long DecimalInput)
         {
             return DecimalInput.ToString("X");
         }

@@ -71,6 +71,7 @@
     <Content Include="Connected Services\ServiceReference1\ResumeWebsite.ServiceReference1.HelloWorldResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="WebServiceDemo.aspx" />
     <None Include="Connected Services\ServiceReference1\WebService1.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -169,6 +170,13 @@
     <Compile Include="WebService1.asmx.cs">
       <DependentUpon>WebService1.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServiceDemo.aspx.cs">
+      <DependentUpon>WebServiceDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebServiceDemo.aspx.designer.cs">
+      <DependentUpon>WebServiceDemo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
