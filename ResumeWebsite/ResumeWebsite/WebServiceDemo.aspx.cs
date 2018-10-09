@@ -5,12 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ResumeWebsite.ServiceReference1;
+using DecimalConversionsDLL;
 
 namespace ResumeWebsite
 {
     public partial class WebServiceDemo : System.Web.UI.Page
     {
         WebService1 WS1 = new WebService1();
+        DecimalConvert DecimalConvert = new DecimalConvert();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,19 +24,6 @@ namespace ResumeWebsite
             {
                 Response.Redirect("Login.aspx");
             }
-
-            long count = 1;
-            string returnValue = " ";
-
-
-            while (100000 >= count)
-            {
-                returnValue = count + " In Binary: " + WS1.BinaryCalculator(count).ToString();
-                returnValue = returnValue + " Hex: " + WS1.HexCalculator(count).ToString();
-                returnValue = returnValue + " Octal: " + WS1.OctalCalculator(count).ToString();
-                BulletedList1.Items.Add(returnValue);
-                count++;
-            }
         }
 
         protected void btnBinaryTest_Click(object sender, EventArgs e)
@@ -44,11 +33,12 @@ namespace ResumeWebsite
 
             try
             {
-                    returnValue = WS1.BinaryCalculator(search).ToString()
-                    + " / " + search;
+                //Decemal convert stems from the DecimalConversion DLL
+                returnValue = search + " In Binary: " + DecimalConvert.BinaryCalculator(search).ToString();
+                returnValue = returnValue + " Hex: " + WS1.HexCalculator(search).ToString();
+                returnValue = returnValue + " Octal: " + DecimalConvert.OctalCalculator(search).ToString();
 
-                    ListBox1.Items.Add(returnValue);
-
+                ListBox1.Items.Add(returnValue);
             }
             catch (Exception ex)
             {

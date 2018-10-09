@@ -6,9 +6,6 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            height: 22px;
-        }
         .HeaderNav
         {
             text-align:center;
@@ -36,9 +33,9 @@
         #ListBox1
         {
             position:relative;
-            left:-2%;
-            right:2%;
             top: 0px;
+            width: 100%;
+            left: 0px;
         }
 
         #BulletedList1
@@ -49,8 +46,8 @@
         }
         #btnBinaryTest{
             position:relative;
-            left:5%;
-            right:-5%;
+            left:40%;
+            right:40%;
             top: 0px;
         }
         #tbTextBox1{
@@ -74,10 +71,9 @@
             </thead>
         </table>
         <div>
-            <asp:BulletedList ID="BulletedList1" runat="server">
-            </asp:BulletedList>
         </div>
-            <asp:ListBox ID="ListBox1" runat="server" Font-Size="11pt" Height="120px" Width="238px"></asp:ListBox> <br />
+            <asp:ListBox ID="ListBox1" runat="server" Font-Size="12pt"></asp:ListBox>
+        <br /> <br />
             <asp:TextBox ID="tbTextbox1" runat="server"></asp:TextBox>
             <asp:Button ID="btnBinaryTest" runat="server" Text="Decimal to Binary" OnClick="btnBinaryTest_Click" />
     </form>
